@@ -20,7 +20,7 @@ body {
 }
 
 // LINK Cleanup
-a, main li{
+a, li{
     text-decoration: none;
     list-style: none;
     // color: black;
@@ -34,11 +34,15 @@ img {
 }
 
 //Fonts
+h1, h2, h3, h4, p, li {
+  font-size: 1.6rem;
+}
+
 h1 {
   font-family: $primaryFont;
   font-weight: 700;   
   font-style: normal;
-  font-size: 6.4rem;
+  font-size: 8.4rem;
   line-height: .8;
   text-transform: uppercase;
     span{
@@ -48,14 +52,24 @@ h1 {
     }
 }
 
-h2 {
+h2, p {
   font-family: $secondaryFont;
   font-weight: 200;
-  font-size: 2.4rem;
+  font-size: 4.2rem;
   font-style: normal;
 }
 
+h3 {
+  font-family: $primaryFont;
+  font-weight: 700; 
+  font-size: 3rem;
+  line-height: .5;
+  text-transform: uppercase; 
+}
 
-
+p{
+  font-weight: 300;
+  font-size: 1.8rem;
+}
 
 // Button Styling

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="https://use.typekit.net/fug1ekk.css"> 
   <!-- add favicon -->
   <link rel="stylesheet" href="./styles/style.css">
@@ -10,10 +11,80 @@
   <title>Frank Hoedl 2.0</title>
 </head>
 <body>
-  <header>
+  <header id="home">
     <h1><span>frank</span>hoedl</h1>
-    <h2>Front End Developer FRANK HOEDL</h2>
+    <h2 class="tracking-in-expand-fwd">Front End Developer</h2>
+    <nav>
+      <ul class="mainMenu">
+        <li>
+          <p class="mobileMenu">menu</p>
+          <ul class="subMenu">
+            <li><a href="#home"></a>home</li>
+            <li><a href="#about"></a>about</li>
+            <li><a href="#skills"></a>skills</li>
+            <li><a href="#contact"></a>contact</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
   </header>
+
+  <main>
+    <section class="bio">
+      <h3>ABOUT</h3>
+      <p>
+        Hi, I'm Frank. I was a professional photographer.  I worked in advertising, represented by one of the best "stills" production houses in Canada.  That experience taught me the value of a good team, and how to work collaboratively with creative professionals to create solutions for the client.  I was lucky to have that career and the success that came with it. 
+      </p> 
+      <p>
+        All the long hours and many espressos later... I'm still searching for the perfect espresso.  Over the last few months, I decided to change course and have recently completed the front end development bootcamp at Juno College. I'm now a Junior Front End Developer. The only constant I know is change. I hope to help you make a positive one.
+      </p> 
+      <!-- <img src="" alt="">         -->
+    </section>
+
+  </main>
+
+  <footer>
+    <!-- Footer Navigarion -->
+    <nav>
+      <ul class="footerNav">
+        <li>
+          <a href="#home" title="Got to Home">home</a>
+        </li>
+        <li>
+          <a href="#about" title="Got to About">about</a>
+        </li>
+        <!-- <li>
+          <a href="#blog" title="Got to our Blog">blog</a>
+        </li> -->
+        <!-- <li">
+          <a href="#contact" title="Got to Contact">contact</a>
+        </li> -->
+      </ul>
+    </nav>
+    <!-- Social Links... replace with icons -->
+    <div class="social__Link">
+      <ul class="footer2">
+        <li class="li__footer">
+          <a href="https://twitter.com/frank_hoedl" title="Go to Twitter">twitter</a>
+        </li>
+        <li class="li__footer">
+          <a href="https://www.facebook.com/frank.hoedl.3" title="Go to Facebook">facebook</a>
+        </li>
+        <li class="li__footer">
+          <a href="linkedin.com/in/frankhoedl" title="Go to Linkedin">linkedIn</a>
+        </li>
+        <li class="li__footer">
+          <a href="https://www.instagram.com/frankhoedl" title="Go to Instagram">Instagram</a>
+        </li>
+        <li>
+          <p><a href="mailto:frankhoedl2.0@gmail.com" target="_blank" rel="noopener">Get in touch</a> here!</p>
+          <!-- potentially replace with mail icon -->
+        </li>
+      </ul>
+    </div>
+    <!-- Copyright -->
+    <p class="copyright">© 2020 frank hoedl</p>
+  </footer>
   
 </body>
 </html>
