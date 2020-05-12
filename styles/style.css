@@ -269,6 +269,34 @@ a, main li {
   list-style: none;
 }
 
+img {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+h1 {
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 6.4rem;
+  line-height: .8;
+  text-transform: uppercase;
+}
+
+h1 span {
+  font-weight: 100;
+  letter-spacing: .5rem;
+  display: block;
+}
+
+h2 {
+  font-family: franklin-gothic-atf, sans-serif;
+  font-weight: 200;
+  font-size: 2.4rem;
+  font-style: normal;
+}
+
 header {
   min-height: 100vh;
 }
