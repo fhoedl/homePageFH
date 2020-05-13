@@ -275,7 +275,7 @@ img {
   border: none;
 }
 
-h1, h2, h3, h4, p, li {
+h1, h2, h3, h4, p, a, li {
   font-size: 1.6rem;
 }
 
@@ -294,7 +294,7 @@ h1 span {
   display: block;
 }
 
-h2, p {
+h2, p, li {
   font-family: franklin-gothic-atf, sans-serif;
   font-weight: 200;
   font-size: 4.2rem;
@@ -309,9 +309,117 @@ h3 {
   text-transform: uppercase;
 }
 
-p {
+h4 {
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: .5;
+  text-transform: uppercase;
+}
+
+p, li {
   font-weight: 300;
   font-size: 1.8rem;
+}
+
+header {
+  min-height: 100vh;
+}
+
+.bio, .skills {
+  margin: 10vh 0;
+}
+
+.bio img {
+  width: 300px;
+  height: 300px;
+  background-color: #b3b3b3;
+  display: block;
+}
+
+.card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[19];
+      grid-template-columns: repeat(19, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  justify-items: center;
+  margin: 8vh 0;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.cardImg {
+  min-width: 300px;
+  width: 65%;
+  height: 300px;
+  background-color: #b3b3b3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 9;
+  grid-column: 1 / 10;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  grid-row: 1/ 5;
+  -ms-grid-column-align: right;
+      justify-self: right;
+}
+
+.cardImg2 {
+  grid-column: 11 / -1;
+  -ms-grid-column-align: left;
+      justify-self: left;
+}
+
+.cardInfo {
+  grid-column: 11 / -1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  grid-row: 1/ 5;
+  min-width: 300px;
+  width: 65%;
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+.cardInfo h4 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.cardInfo p {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+}
+
+.cardInfo ul {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  padding: 0;
+}
+
+.cardInfo ul li {
+  display: inline-block;
+  margin-right: 5%;
+}
+
+.cardInfo2 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 9;
+  grid-column: 1/ 10;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  grid-row: 1/ 5;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.cardInfo2 h4, .cardInfo2 p, .cardInfo2 ul {
+  text-align: right;
 }
 
 .tracking-in-expand-fwd {

@@ -34,7 +34,7 @@ img {
 }
 
 //Fonts
-h1, h2, h3, h4, p, li {
+h1, h2, h3, h4, p, a, li {
   font-size: 1.6rem;
 }
 
@@ -52,7 +52,7 @@ h1 {
     }
 }
 
-h2, p {
+h2, p, li {
   font-family: $secondaryFont;
   font-weight: 200;
   font-size: 4.2rem;
@@ -67,9 +67,23 @@ h3 {
   text-transform: uppercase; 
 }
 
-p{
+h4 {
+  font-family: $primaryFont;
+  font-weight: 700; 
+  font-size: 2.4rem;
+  line-height: .5;
+  text-transform: uppercase; 
+}
+
+p, li{
   font-weight: 300;
   font-size: 1.8rem;
 }
+
+// li { 
+//   font-weight: 200;
+//   // line-height: .5;
+//   // text-transform: uppercase; 
+// }
 
 // Button Styling
