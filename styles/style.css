@@ -336,6 +336,22 @@ p, li {
   }
 }
 
+header {
+  min-height: 100vh;
+}
+
+.shape1 {
+  -webkit-clip-path: polygon(100% 0%, 100% 87%, 71% 100%, 0 87%, 0 0);
+          clip-path: polygon(100% 0%, 100% 87%, 71% 100%, 0 87%, 0 0);
+  background: #dcf4f0;
+  background: linear-gradient(172deg, #dcf4f0 46%, #35ddff 100%);
+  height: 100vh;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
 .homeContainer,
 .aboutContainer,
 .projectContainer {
@@ -354,7 +370,6 @@ div.aboutContainer {
   display: grid;
   -ms-grid-columns: (minmax(500px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  margin: 4vh auto;
   grid-gap: 2.5%;
 }
 
@@ -366,6 +381,8 @@ nav {
       grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   justify-items: center;
   grid-gap: 2.5%;
+  -webkit-transform: all;
+          transform: all;
 }
 
 nav p {
@@ -373,16 +390,25 @@ nav p {
 }
 
 nav li {
-  display: inline-block;
-  width: 100px;
-  text-align: center;
   color: black;
+  display: inline-block;
+  width: 110px;
+  text-align: center;
 }
 
 nav li a {
-  color: black;
+  color: #162683;
   text-transform: uppercase;
   font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 500;
+}
+
+a:hover,
+li:hover {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  color: #346078;
+  font-weight: 700;
 }
 
 .bioContainer {

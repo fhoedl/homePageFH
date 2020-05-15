@@ -14,7 +14,7 @@ div.aboutContainer{
 .homeContainer {
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    margin: 4vh auto;
+    // margin: 4vh auto;
     // justify-items: center;
     // align-items: start;
     grid-gap: 2.5%;
@@ -28,21 +28,32 @@ nav{
     justify-items: center;
     // align-items: start;
     grid-gap: 2.5%;
+    transform: all;
+    // transition: all .5s ease-in-out;
         p{
             display: none;
         }
         li{
+            color: black;
             display: inline-block;
-            width: 100px;
+            width: 110px;
             text-align: center;
             a {
-                color: black;
+                color: rgb(22, 38, 131);
                 text-transform: uppercase;
                 font-family: $primaryFont;
+                font-weight: 500;
             }
-            color:black;
         }
 }
+
+a:hover,
+li:hover {
+    transition: all .3s ease-in-out;
+    color: rgb(52, 96, 120);
+    font-weight: 700;
+}
+
 .bioContainer {
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
