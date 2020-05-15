@@ -247,6 +247,7 @@ template {
 html {
   font-size: 62.5%;
   height: 100%;
+  width: 100%;
   scroll-behavior: smooth;
 }
 
@@ -342,11 +343,105 @@ p, li {
   padding: 4vh 0;
 }
 
-.bio img {
-  width: 300px;
-  height: 300px;
-  background-color: #b3b3b3;
-  display: block;
+div.aboutContainer {
+  display: -ms-grid;
+  display: grid;
+  margin: auto;
+}
+
+.homeContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(500px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  margin: 4vh auto;
+  grid-gap: 2.5%;
+}
+
+nav {
+  grid-column: 1 / -1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  justify-items: center;
+  grid-gap: 2.5%;
+}
+
+nav p {
+  display: none;
+}
+
+nav li {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  color: black;
+}
+
+nav li a {
+  color: black;
+  text-transform: uppercase;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+}
+
+.bioContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(500px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  margin: 4vh auto;
+  justify-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  grid-gap: 2.5%;
+}
+
+.bioContainer h3 {
+  grid-column: 1/-1;
+}
+
+.bioContainer div {
+  margin: 2vh 0 0 0;
+  min-width: 100%;
+}
+
+.bioContainer div.bioContainer {
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+}
+
+.bioContainer p:first-child {
+  margin-bottom: 2vh;
+}
+
+.bioContainer p {
+  padding: 0 5%;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.bioContainer .aboutImg {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0 10% 2vh 10%;
+  min-width: 200px;
+  min-height: calc(200px * .618);
+  overflow: hidden;
+}
+
+.aboutImg > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 80%;
+     object-position: 50% 80%;
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
 }
 
 .card {

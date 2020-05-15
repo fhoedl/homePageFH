@@ -1,4 +1,3 @@
-
 .homeContainer,
 .aboutContainer,
 .projectContainer{
@@ -7,17 +6,103 @@
   // background-color: $primaryColor;
 }
 
+div.aboutContainer{
+    display:grid;
+    margin: auto;
+}
+
+.homeContainer {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    margin: 4vh auto;
+    // justify-items: center;
+    // align-items: start;
+    grid-gap: 2.5%;
+}
+
+nav{
+    // width: 100vw;
+    grid-column: 1 / -1;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-items: center;
+    // align-items: start;
+    grid-gap: 2.5%;
+        p{
+            display: none;
+        }
+        li{
+            display: inline-block;
+            width: 100px;
+            text-align: center;
+            a {
+                color: black;
+                text-transform: uppercase;
+                font-family: $primaryFont;
+            }
+            color:black;
+        }
+}
+.bioContainer {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    // grid-template-rows: auto;
+    margin: 4vh auto;
+    justify-items: center;
+    align-items: start;
+    grid-gap: 2.5%;
+        h3{
+            grid-column: 1/-1;
+        }
+        div{
+            margin: 2vh 0 0 0;
+            // max-width: 600px;
+            min-width:100%;
+        }
+        div.bioContainer {
+            min-height: fit-content;
+        }
+        p:first-child{
+            margin-bottom: 2vh;
+        }
+        p{
+            padding: 0 5%;
+            text-align: left;
+            margin: 0 auto;
+        }
+        .aboutImg{
+            align-self: center;
+            // max-width: 100%;
+            padding:  0 10% 2vh 10%;
+            min-width: 200px;
+            min-height: calc(200px * .618);
+            overflow: hidden;
+            // height: calc(100%);
+        }
+}
 
 // .bio, .skills{
 //     margin: 10vh 0;
 // }
 
-.bio img{ 
-    width: 300px;
-    height: 300px;
-    background-color: rgb(179, 179, 179);
-    display: block;
+// .aboutImg { 
+//     // max-width: 40vw;
+//     // max-height: calc(40vw * .618);
+//     min-width: 200px;
+//     min-height: calc(200px * .618);
+//     // background-color: grey;
+//     // display: block;
+// }
+
+.aboutImg>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 80%;
+    filter: brightness(1.2);
 }
+
+
 
 // Project Layout
 .card{
