@@ -1,0 +1,30 @@
+@media(max-width: 1020px) {
+.cardImg:nth-of-type(even) {
+    grid-row: 1/ 2;
+}
+
+.card>div {
+    margin: 0 auto;
+}
+
+.card2>.cardInfo{
+        h4, p, ul{
+            text-align:left;
+        }
+}
+
+
+// .card>div:nth-child(1) {
+//     justify-self: center;
+// }
+
+// .card>div:nth-child(2) {
+//     justify-self: center;
+// }
+// .card2 > .cardInfo h4, 
+// .card2 > .cardInfo p, 
+// .card2 > .cardInfo ul {
+// 	text-align: left;
+// }
+}
+
