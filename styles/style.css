@@ -251,7 +251,7 @@ html {
 }
 
 body {
-  /* drop in font-family:...;*/
+  font-family: "neue-haas-grotesk-display", sans-serif;
   /* add another item to body, if required ie: color */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -277,10 +277,11 @@ img {
 
 h1, h2, h3, h4, p, a, li {
   font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-  font-family: "neue-haas-grotesk-display", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 8.4rem;
@@ -302,7 +303,6 @@ h2, p, li {
 }
 
 h3 {
-  font-family: "neue-haas-grotesk-display", sans-serif;
   font-weight: 700;
   font-size: 3rem;
   line-height: .5;
@@ -310,7 +310,6 @@ h3 {
 }
 
 h4 {
-  font-family: "neue-haas-grotesk-display", sans-serif;
   font-weight: 700;
   font-size: 2.4rem;
   line-height: .5;
@@ -336,12 +335,11 @@ p, li {
   }
 }
 
-header {
+.homeContainer,
+.aboutContainer,
+.projectContainer {
   min-height: 100vh;
-}
-
-.bio, .skills {
-  margin: 10vh 0;
+  padding: 4vh 0;
 }
 
 .bio img {

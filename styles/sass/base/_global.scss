@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    /* drop in font-family:...;*/
+    font-family: $primaryFont;
     /* add another item to body, if required ie: color */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -19,14 +19,14 @@ body {
     width: 90%;
 }
 
-// LINK Cleanup
+// LINK - Initial Cleanup
 a, li{
     text-decoration: none;
     list-style: none;
     // color: black;
 }
 
-// Img - removing white border
+// IMAGE - Removing white border
 img {
   margin: 0;
   padding: 0;
@@ -36,10 +36,11 @@ img {
 //Fonts
 h1, h2, h3, h4, p, a, li {
   font-size: 1.6rem;
+  margin: 0;
+  padding : 0;
 }
 
 h1 {
-  font-family: $primaryFont;
   font-weight: 700;   
   font-style: normal;
   font-size: 8.4rem;
@@ -60,15 +61,17 @@ h2, p, li {
 }
 
 h3 {
-  font-family: $primaryFont;
   font-weight: 700; 
   font-size: 3rem;
   line-height: .5;
   text-transform: uppercase; 
 }
 
+// .projectContainer>h3{
+//   padding-top: 4vh;
+// }
+
 h4 {
-  font-family: $primaryFont;
   font-weight: 700; 
   font-size: 2.4rem;
   line-height: .5;
@@ -79,11 +82,3 @@ p, li{
   font-weight: 300;
   font-size: 1.8rem;
 }
-
-// li { 
-//   font-weight: 200;
-//   // line-height: .5;
-//   // text-transform: uppercase; 
-// }
-
-// Button Styling

@@ -1,6 +1,16 @@
-.bio, .skills{
-    margin: 10vh 0;
+
+.homeContainer,
+.aboutContainer,
+.projectContainer{
+  min-height: 100vh;
+  padding: 4vh 0;
+  // background-color: $primaryColor;
 }
+
+
+// .bio, .skills{
+//     margin: 10vh 0;
+// }
 
 .bio img{ 
     width: 300px;
@@ -49,58 +59,4 @@
 
 .card>div:nth-child(2) {
     justify-self: left;
-}
-
-// SVG's
-.skills ul{
-    display: grid;
-    width: 100%;
-    grid-template-columns:repeat(auto-fit, minmax(100px, 1fr));
-    grid-gap: 4px;
-    justify-content: center;
-    padding:0;
-}
-.svgContainer {
-    // border: 1px solid #999;
-    justify-self:center;
-    display: flex;
-    max-height: 110px;
-    max-width: 110px;
-    height: calc(6vw);
-    width: calc(6vw);
-    min-height: 80px;
-    min-width: 80px;
-}
-.svgHidden {
-    display: none;
-}
-
-.svgIcon {
-    // border: 1px solid #999;
-    width: 90%;
-    height: 90%;
-    margin: auto;
-    filter: grayscale(80%) ;
-    transform: all;
-}
-
-.svgIconGitHub,
-.svgIconReact,
-.svgIconSASS,
-.svgIconJS {
-    filter: grayscale(80%) brightness(.8);
-    transform: all;
-}
-.svgIconPS {
-    filter: grayscale(80%) contrast(.7) brightness(1.1);
-    transform: all;
-}
-.svgIconC1 {
-    filter: grayscale(80%) brightness(.7) contrast(1.5) ;
-    transform: all;
-}
-
-.svgIcon:hover {
-    transition: all .3s ease-in;
-    filter: unset;
 }
