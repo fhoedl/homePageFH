@@ -251,12 +251,18 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "neue-haas-grotesk-display", sans-serif;
   /* add another item to body, if required ie: color */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  min-height: 100%;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
 }
 
 .wrapper {
@@ -268,18 +274,13 @@ body {
 a, li {
   text-decoration: none;
   list-style: none;
+  color: black;
 }
 
 img {
   margin: 0;
   padding: 0;
   border: none;
-}
-
-h1, h2, h3, h4, p, a, li {
-  font-size: 1.6rem;
-  margin: 0;
-  padding: 0;
 }
 
 h1 {
@@ -296,7 +297,7 @@ h1 span {
   display: block;
 }
 
-h2, p, li {
+h2, p {
   font-family: franklin-gothic-atf, sans-serif;
   font-weight: 200;
   font-size: 4.2rem;
@@ -310,6 +311,10 @@ h3 {
   text-transform: uppercase;
 }
 
+.projectContainer > h3 {
+  padding-top: 4vh;
+}
+
 h4 {
   font-weight: 700;
   font-size: 2.4rem;
@@ -317,9 +322,33 @@ h4 {
   text-transform: uppercase;
 }
 
-p, li {
+h5 {
+  font-size: 8rem;
+  color: #f3a626;
+}
+
+p {
   font-weight: 300;
   font-size: 1.8rem;
+}
+
+.animatedNav .hamburger::after {
+  -webkit-transform: rotate(90deg) translate(-8px);
+          transform: rotate(90deg) translate(-8px);
+}
+
+.animatedNav .hamburger {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.animatedNav .hamburger::before {
+  opacity: 0;
+}
+
+.txt-type > .txt {
+  border-right: .2rem solid #999;
+  padding: .05rem .5rem .05rem 0;
 }
 
 @media (max-width: 1020px) {
@@ -341,31 +370,167 @@ header {
 }
 
 .shape1 {
-  -webkit-clip-path: polygon(100% 0%, 100% 87%, 71% 100%, 0 87%, 0 0);
-          clip-path: polygon(100% 0%, 100% 87%, 71% 100%, 0 87%, 0 0);
+  -webkit-clip-path: polygon(100% 0%, 100% 92%, 71% 100%, 0 90%, 0 0);
+          clip-path: polygon(100% 0%, 100% 92%, 71% 100%, 0 90%, 0 0);
   background: #dcf4f0;
-  background: linear-gradient(172deg, #dcf4f0 46%, #35ddff 100%);
+  background: linear-gradient(172deg, #f0f5f4 30%, #8bc3c6 100%);
   height: 100vh;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+}
+
+.shape2 {
+  -webkit-clip-path: polygon(0 92%, 0% 100%, 71% 100%);
+  clip-path: polygon(0 92%, 0% 100%, 71% 100%);
+}
+
+.shape3 {
+  -webkit-clip-path: polygon(100% 92%, 100% 100%, 71% 100%);
+  clip-path: polygon(100% 92%, 100% 100%, 71% 100%);
+}
+
+.svgArrows {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  max-height: 60px;
+  max-width: 60px;
+  stroke: white;
+  stroke-width: 2;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: right;
+      justify-self: right;
+  margin-right: 5%;
+  grid-column: 2/-1;
 }
 
 .homeContainer,
 .aboutContainer,
 .projectContainer {
   min-height: 100vh;
-  padding: 4vh 0;
+}
+
+nav {
+  -ms-grid-row-align: start;
+      align-self: start;
+  padding-top: 20px;
+  display: -ms-grid;
+  display: grid;
+}
+
+nav li {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+nav input {
+  display: none;
+}
+
+nav label {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  display: block;
+  width: 3rem;
+  height: 30px;
+}
+
+.hamburger {
+  top: 45%;
+  display: block;
+  position: relative;
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  opacity: .5;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  width: 3rem;
+  height: 3px;
+  background-color: #d94c3b;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  left: 0;
+}
+
+.hamburger::before {
+  bottom: 8px;
+}
+
+.hamburger::after {
+  top: 8px;
+}
+
+ul.menuSub {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(100px, 200px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  width: 100%;
+  margin-top: 2rem;
+  gap: 1vw;
+  -webkit-transform: all;
+          transform: all;
+  opacity: 0;
+  transform: all;
+}
+
+ul.menuSub li {
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.navToggle:hover .hamburger {
+  opacity: 1;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.navToggle:checked ~ .menuSub {
+  opacity: 1;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+h1 {
+  color: white;
+  text-shadow: 1px 2px 10px #cfe6e7;
+}
+
+h1 span {
+  color: #575757;
+}
+
+h2 {
+  color: #575757;
+}
+
+a:hover,
+li:hover {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 div.aboutContainer {
   display: -ms-grid;
   display: grid;
   margin: auto;
+  padding: 4vh 0;
 }
 
 .homeContainer {
+  padding: 4vh 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(500px, 1fr))[auto-fit];
@@ -373,42 +538,12 @@ div.aboutContainer {
   grid-gap: 2.5%;
 }
 
-nav {
+.homeContainer nav {
   grid-column: 1 / -1;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  justify-items: center;
-  grid-gap: 2.5%;
-  -webkit-transform: all;
-          transform: all;
 }
 
-nav p {
-  display: none;
-}
-
-nav li {
-  color: black;
-  display: inline-block;
-  width: 110px;
-  text-align: center;
-}
-
-nav li a {
-  color: #162683;
-  text-transform: uppercase;
-  font-family: "neue-haas-grotesk-display", sans-serif;
-  font-weight: 500;
-}
-
-a:hover,
-li:hover {
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-  color: #346078;
-  font-weight: 700;
+.homeContainer .titleElements {
+  grid-column: 1 /-1;
 }
 
 .bioContainer {
@@ -585,54 +720,4 @@ li:hover {
   transition: all .3s ease-in;
   -webkit-filter: unset;
           filter: unset;
-}
-
-.tracking-in-expand-fwd {
-  -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 1s both;
-  animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 1s both;
-}
-
-/* ----------------------------------------------
- * Generated by Animista on 2020-5-12 1:40:49
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-/**
- * ----------------------------------------
- * animation tracking-in-expand-fwd
- * ----------------------------------------
- */
-@-webkit-keyframes tracking-in-expand-fwd {
-  0% {
-    letter-spacing: -0.5em;
-    -webkit-transform: translateZ(-700px);
-    transform: translateZ(-700px);
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    opacity: 1;
-  }
-}
-
-@keyframes tracking-in-expand-fwd {
-  0% {
-    letter-spacing: -0.5em;
-    -webkit-transform: translateZ(-700px);
-    transform: translateZ(-700px);
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    opacity: 1;
-  }
 }

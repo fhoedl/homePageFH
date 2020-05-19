@@ -17,32 +17,42 @@
 <body>
     <!-- HEADER ... -->
     <header id="home" class="shape1">
-
-        <!-- <div class="shape1"></div> -->
         <div class="homeContainer wrapper">
-            <!-- NAVIGATION ... -->
-            <nav class="mainMenu">
-                <p class="mobileMenu">menu</p>
-                <ul class="subMenu">
-                    <li>
-                        <a href="#home" title="Got to Home">home</a>
+            <nav class="menuMain">
+                <!-- <p >menu</p> -->
+                <label for="navToggleCheck" class="navToggle">
+                    <span class="hamburger"></span>
+                </label>
+                <input type="checkbox" name="menuCheckbox" id="navToggleCheck" class="navToggle">
+                <ul class="menuSub">
+                    <li class=menuButton>
+                        <a class="menuItem" href="#home" title="Got to Home">home</a>
                     </li>
-                    <li>
+                    <li class=menuButton>
                         <a href="#about" title="Got to About">about</a>
                     </li>
-                    <li><a href="#projects">projects</a></li>
-                    <li><a href="#contact">contact</a></li>
+                    <li class=menuButton>
+                        <a href="#projects" title="Got to Projects">projects</a>
+                    </li>
+                    <li class=menuButton>
+                        <a href="#contact" title="Got to Contact">contact</a>
+                    </li>
                 </ul>
             </nav>
-            <!-- end -->
 
-            <!-- TITLE, SubTtile ... -->
+            <!-- <h5>FH<h5> -->
             <div class="titleElements">
-                <!-- LOGO? -->
                 <h1><span>frank</span>hoedl</h1>
-                <h2 class="tracking-in-expand-fwd">Front End Developer</h2>
+                <!-- <h2 class="tracking-in-expand-fwd">Front End Developer</h2> -->
+                <h2>I am a<span class=txt-type data-wait="2000" data-words='[ " Photographer", " Front End Developer", "lways learning ..." ]'></span>
+                </h2>
             </div>
-            <!-- end -->
+
+            <div class="svgContainers svgArrows">
+                <svg class="svgIcon " role="img">
+                    <use xlink:href="#svgArrows" ></use>
+                </svg>
+            </div>
         </div>
     </header>
     <!-- END HEADER -->
@@ -73,7 +83,7 @@
             <!-- SKILLS ... -->
             <aside class="wrapper">
                 <div class="skills">
-                    <!-- <h3>SKILLS</h3> -->
+
                     <ul skillElements>
                         <li class="svgContainer">
                             <svg class="svgIcon" role="img">
@@ -118,11 +128,10 @@
                     </ul>
                 </div>
             </aside>
-            <!-- end -->
         </div>
+
         <!-- PROJECTS Section ... -->
         <section  id="projects" class="projectContainer wrapper">
-            <!-- project 1 -->
             <h3>projects</h3>
             <div class="card card1" data-aos="flip-right">
                 <div class="cardImg">
@@ -137,13 +146,8 @@
                     </ul>
                 </div> 
             </div>
-            <!-- end -->
 
-            <!-- project 2 -->
             <div class="card card2" data-aos="flip-left">
-                <!-- <div class="cardImg">
-                    <img src="" alt="project2">
-                </div> -->
                 <div class="cardInfo">
                     <h4>Who Told It Better</h4>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, veniam. Nostrum molestiae, sit modi rerum iste amet aspernatur iusto dolorem ab quis doloribus nemo nihil.</p>
@@ -156,9 +160,7 @@
                     <img src="" alt="project2">
                 </div>
             </div>
-            <!-- end -->
 
-            <!-- project 3 -->
             <div class="card card3"  data-aos="flip-right">
                 <div class="cardImg">
                     <img src="" alt="project3">
@@ -174,7 +176,6 @@
                     </ul>
                 </div>
             </div>
-            <!-- end -->
         </section>
         <!-- end  -->
     </main>
@@ -182,7 +183,6 @@
 
     <!-- FOOTER ... -->
     <footer>
-      <!-- Footer Navigation -->
         <nav>
           <ul class="footerNav">
               <li>
@@ -191,25 +191,14 @@
               <li>
                   <a href="#about" title="Got to About">about</a>
               </li>
-              <!-- <li>
-                  <a href="#blog" title="Got to our Blog">blog</a>
-              </li> -->
-              <!-- <li">
-                  <a href="#contact" title="Got to Contact">contact</a>
-              </li> -->
           </ul>
       </nav>
-      <!-- end -->
 
-      <!-- Social Links... replace with icons -->
       <div class="social__Link">
           <ul class="footer2">
               <li class="li__footer">
                   <a href="https://twitter.com/frank_hoedl" title="Go to Twitter" target="_blank" rel="noopener">twitter</a>
               </li>
-              <!-- <li class="li__footer">
-                  <a href="https://www.facebook.com/frank.hoedl.3" title="Go to Facebook" target="_blank" rel="noopener">facebook</a>
-              </li> -->
               <li class="li__footer">
                   <a href="https://www.linkedin.com/in/frankhoedl" title="Go to Linkedin" target="_blank" rel="noopener">linkedIn</a>
               </li>
@@ -218,14 +207,11 @@
               </li>
               <li>
                   <p><a href="mailto:frankhoedl2.0@gmail.com" target="_blank" rel="noopener">Get in touch</a> here!</p>
-                  <!-- potentially replace with mail icon -->
               </li>
           </ul>
       </div>
-      <!-- end -->
 
-      
-      <p class="copyright">© 2020 frank hoedl</p> <!-- Copyright -->
+      <p class="copyright">© 2020 frank hoedl</p>
     </footer>
     <!-- end FOOTER -->
 
@@ -440,12 +426,56 @@
         </symbol>
         </svg>
 
+        <!--Double Arrows , original orientation pointing left -->
+        <!-- Arrow by icongeek from the Noun Project -->
+        <svg xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" 
+            class="svgHidden" aria-labelledby="Arrows" 
+            x="0px" y="0px"
+            style="enable-background:new 0 0 96 96;"
+            xml:space="preserve">
+            <style type="text/css">
+                .st0 {
+                    fill: none;
+                }
+        
+                .st1 {
+                    fill: none;
+                    stroke: #000000;
+                    stroke-width: 4;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 10;
+                }
+        
+                .st2 {
+                    fill: none;
+                    stroke: #000000;
+                    stroke-width: 5;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 10;
+                }
+            </style>      
+            <symbol id="svgArrows"  viewBox="0 0 96 120">
+                <title>Arrows</title>
+                <desc>Arrows</desc>
+                <g>
+                    <g>
+                        <path
+                            d="M28.4,48L70.1,6.3c0.4-0.4,0.4-1,0-1.4s-1-0.4-1.4,0L25.6,48l43.1,43.1c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3    c0.4-0.4,0.4-1,0-1.4L28.4,48z" />
+                        <path
+                            d="M7.4,48L49.1,6.3c0.4-0.4,0.4-1,0-1.4s-1-0.4-1.4,0L4.6,48l43.1,43.1c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3    c0.4-0.4,0.4-1,0-1.4L7.4,48z" />
+                    </g>
+                </g>
+            </symbol>
+        </svg>
     </article>
+    
 
     <!-- JavaScript & Jquery HTML Tags -->
     <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
     <script src="scripts.js"></script>
-
 
     <!-- Animate on Scroll JS Portion -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

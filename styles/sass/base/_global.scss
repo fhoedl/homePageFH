@@ -5,13 +5,19 @@ html {
     scroll-behavior: smooth;
 }
 
+*{
+  // border: 1px solid red;
+  margin:0;
+  padding:0;
+}
+
 body {
     font-family: $primaryFont;
     /* add another item to body, if required ie: color */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    min-height: 100%; //full height backgrounds
-    // position: relative;
+    min-height: 100vh; //full height backgrounds
+    min-height: -webkit-fill-available; //fix for iphone menubar
 }
 
 .wrapper {
@@ -24,7 +30,7 @@ body {
 a, li{
     text-decoration: none;
     list-style: none;
-    // color: black;
+    color: black;
 }
 
 // IMAGE - Removing white border
@@ -35,11 +41,7 @@ img {
 }
 
 //Fonts
-h1, h2, h3, h4, p, a, li {
-  font-size: 1.6rem;
-  margin: 0;
-  padding : 0;
-}
+
 
 h1 {
   font-weight: 700;   
@@ -54,12 +56,13 @@ h1 {
     }
 }
 
-h2, p, li {
+h2, p{
   font-family: $secondaryFont;
   font-weight: 200;
   font-size: 4.2rem;
   font-style: normal;
 }
+
 
 h3 {
   font-weight: 700; 
@@ -68,9 +71,9 @@ h3 {
   text-transform: uppercase; 
 }
 
-// .projectContainer>h3{
-//   padding-top: 4vh;
-// }
+.projectContainer>h3{
+  padding-top: 4vh;
+}
 
 h4 {
   font-weight: 700; 
@@ -79,7 +82,14 @@ h4 {
   text-transform: uppercase; 
 }
 
-p, li{
+h5 {
+  // font-family: Auro;
+  font-size: 8rem;
+  color:  #f3a626;
+}
+
+
+p{
   font-weight: 300;
   font-size: 1.8rem;
 }
