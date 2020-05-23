@@ -1,7 +1,7 @@
 
 nav{
   align-self: start;
-  padding-top: 20px;
+  padding-top: 15px;
   display: grid;
 }
 
@@ -19,8 +19,8 @@ nav label{
   // border: 1px solid orange;
   justify-self: end;
   display: block;
-  width: 3rem;
-  height: 30px;
+  width: 44px;
+  height: 44px;
   outline: none;
 }
 
@@ -31,13 +31,14 @@ nav label{
   position: relative;  // margin: 40px 0 0 0;
   transition: transform 250ms ease-in-out;
   opacity: .5;
+  display: none; //REWORK for small Screens
 }
 
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-  width: 3rem;
-  height: 3px;
+  width: 44px;
+  height: 4px;
   background-color:  #d94c3b ; 
 }
 .hamburger::before,
@@ -47,10 +48,10 @@ nav label{
  left:0;
 }
 .hamburger::before{
-  bottom: 8px;
+  bottom: 10px;
 }
 .hamburger::after{
-  top: 8px;
+  top: 10px;
 }
 
 ul.menuSub {
@@ -62,7 +63,7 @@ ul.menuSub {
     margin-top: 2rem;
     gap: 1vw;
     transform: all;
-    opacity: 0;
+    // opacity: 0; //Rework for SML Screen
     transform: all ;
       li { 
           text-align:right;
@@ -90,7 +91,7 @@ li:hover {
 // ANIMATION
 // ROTATING Hamburger, create X
 .animatedNav .hamburger::after{
-  transform: rotate(90deg) translate(-8px); 
+  transform: rotate(90deg) translate(-10px); 
 }
 .animatedNav .hamburger{
   transform: rotate(-45deg); 

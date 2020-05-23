@@ -527,10 +527,6 @@ div.aboutContainer {
       justify-self: left;
 }
 
-header {
-  min-height: 100vh;
-}
-
 .shape1 {
   -webkit-clip-path: polygon(100% 0%, 100% 92%, 71% 100%, 0 90%, 0 0);
           clip-path: polygon(100% 0%, 100% 92%, 71% 100%, 0 90%, 0 0);
@@ -568,7 +564,7 @@ header {
 nav {
   -ms-grid-row-align: start;
       align-self: start;
-  padding-top: 20px;
+  padding-top: 15px;
   display: -ms-grid;
   display: grid;
 }
@@ -587,8 +583,8 @@ nav label {
   -ms-grid-column-align: end;
       justify-self: end;
   display: block;
-  width: 3rem;
-  height: 30px;
+  width: 44px;
+  height: 44px;
   outline: none;
 }
 
@@ -601,13 +597,14 @@ nav label {
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
   opacity: .5;
+  display: none;
 }
 
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-  width: 3rem;
-  height: 3px;
+  width: 44px;
+  height: 4px;
   background-color: #d94c3b;
 }
 
@@ -619,11 +616,11 @@ nav label {
 }
 
 .hamburger::before {
-  bottom: 8px;
+  bottom: 10px;
 }
 
 .hamburger::after {
-  top: 8px;
+  top: 10px;
 }
 
 ul.menuSub {
@@ -639,7 +636,6 @@ ul.menuSub {
   gap: 1vw;
   -webkit-transform: all;
           transform: all;
-  opacity: 0;
   transform: all;
 }
 
@@ -667,8 +663,8 @@ li:hover {
 }
 
 .animatedNav .hamburger::after {
-  -webkit-transform: rotate(90deg) translate(-8px);
-          transform: rotate(90deg) translate(-8px);
+  -webkit-transform: rotate(90deg) translate(-10px);
+          transform: rotate(90deg) translate(-10px);
 }
 
 .animatedNav .hamburger {

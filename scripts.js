@@ -73,11 +73,10 @@ class Typewriter {
 // init FUNCTION Calls
 appFH.init = () => {
     appFH.navBar();
-    // appFH.typing();
+    appFH.typing();
 }
 
 // DOCUMENT READY... with init FUNCTION CALL
 $(() => {
     appFH.init();
 })
-
