@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="keywords"
+        content="Web Developer, HTML, CSS, Javascript, and React, Contact Info, Resume">
+    <meta name="description"
+        content="Overiew of projects,with short introduction and contact info ">
+    <meta name="author" content="Frank Hoedl">
     <!-- Adobe TypeKit Link -->
     <link rel="stylesheet" href="https://use.typekit.net/fug1ekk.css"> 
     <!-- Animate on Scroll - HTML Head Tag -->
@@ -11,21 +16,22 @@
     <link rel="stylesheet" href="./styles/style.css">
     <!-- add favicon -->
     <!-- add icons -->
-    <title>Frank Hoedl 2.0</title>
+    <title>Frank Hoedl 2.0 - Front End Developer</title>
 </head>
 
 <body>
     <!-- HEADER ... -->
-    <header id="home" class="shape1">
+    <header id="home" class="shape1" role="banner">
         <div class="homeContainer wrapper">
             <nav class="menuMain">
                 <!-- <p >menu</p> -->
-                <label for="navToggleCheck" class="navToggle">
+                <label for="navToggleCheck" class="navToggle" role="navigation" aria-labelledby="Click to open dropdown menu" aria-haspopup="true"
+               tabindex="0" >   
                     <span class="hamburger"></span>
                 </label>
-                <input type="checkbox" name="menuCheckbox" id="navToggleCheck" class="navToggle">
+                <input type="checkbox" name="menuCheckbox" id="navToggleCheck" class="navToggle" >
                 <ul class="menuSub">
-                    <li class=menuButton>
+                    <li role="menuitem" class=menuButton>
                         <a class="menuItem" href="#home" title="Got to Home">home</a>
                     </li>
                     <li class=menuButton>
@@ -48,11 +54,11 @@
                 </h2>
             </div>
 
-            <div class="svgContainers svgArrows">
-                <svg class="svgIcon " role="img">
+            <!-- <div class="svgContainers svgArrows">
+                <svg class="svgIcon scale-out-center" role="img">
                     <use xlink:href="#svgArrows" ></use>
                 </svg>
-            </div>
+            </div> -->
         </div>
     </header>
     <!-- END HEADER -->
@@ -74,7 +80,7 @@
                     </div>
                     
                     <div class="aboutImg">
-                        <img src="./Assets/RasterFiles/MySonAndISml.jpg" alt="Frank Hoedl">
+                        <img src="./Assets/RasterFiles/MySonAndISml.jpg" alt="casual portrait with my son">
                     </div>
                 </div>
             </section>

@@ -2,11 +2,16 @@ const appFH = {};
 
 // NavBar Hamburger ANIMATION
 appFH.navBar = () => {
-    $()
     $(`label.navToggle`).on(`click`, function(){
         $(this).toggleClass('animatedNav')
     })
 }
+
+// appFH.arrow = () => {
+//     $('.svgArrows').on('click', function () {
+//         $(this).
+//     })
+// }
 
 // TYPING ANIMATION...
 appFH.typing = () => {
@@ -68,7 +73,7 @@ class Typewriter {
 // init FUNCTION Calls
 appFH.init = () => {
     appFH.navBar();
-    appFH.typing();
+    // appFH.typing();
 }
 
 // DOCUMENT READY... with init FUNCTION CALL

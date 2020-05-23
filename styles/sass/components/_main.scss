@@ -2,134 +2,8 @@
 .aboutContainer,
 .projectContainer{
   min-height: 100vh;
-}
-
-nav{
-  align-self: start;
-  padding-top: 20px;
-  display: grid;
-}
-
-nav li{
-  font-weight: 400;
-  font-size: 1.8rem;
-  line-height: 1.6;
-}
-// hide checkbox
-nav input{
-  display: none;
-}
-
-nav label{
-  // border: 1px solid orange;
-  justify-self: end;
-  display: block;
-  width: 3rem;
-  height: 30px;
-}
-
-// hamburger... Menu built as elements for Animation
-.hamburger{
-  top: 45%;
-  display:block;
-  position: relative;  // margin: 40px 0 0 0;
-  transition: transform 250ms ease-in-out;
-  opacity: .5;
-}
-
-.hamburger,
-.hamburger::before,
-.hamburger::after {
-  width: 3rem;
-  height: 3px;
-  background-color:  #d94c3b ; 
-}
-
-.hamburger::before,
-.hamburger::after {
- content: ''; 
- position: absolute;
- left:0;
-}
-
-.hamburger::before{
-  bottom: 8px;
-}
-
-.hamburger::after{
-  top: 8px;
-}
-
-ul.menuSub {
-    // border: 1px solid black;
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
-    justify-content: end;
-    width: 100%;
-    margin-top: 2rem;
-    gap: 1vw;
-    transform: all;
-    opacity: 0;
-    transform: all ;
-      li { 
-          text-align:right;
-          text-transform: uppercase;
-      }        
-}
-
-// displaying menuItems 
-.navToggle:hover .hamburger{
-  opacity: 1;
-  transition: all .4s ease-in-out;
-}
-.navToggle:checked ~.menuSub {
-    // visibility: visible;
-    opacity: 1;
-    transition: all .4s ease-in-out;
-}
-
-// // ROTATING Hamburger, create X
-// .animatedNav .hamburger::after{
-//   transform: rotate(90deg) translate(-8px); 
-// }
-// .animatedNav .hamburger{
-//   transform: rotate(-45deg); 
-// }
-// // hide ::before ... "x" is formed ( note can't hide center, it's the basis fi the before and after elements )
-// .animatedNav .hamburger::before{
-//   opacity: 0;  
-// }
-
-h1{
-  color:white;
-  text-shadow: 1px 2px 10px hsl(183, 34%, 86%);
-    span{
-      color:rgb(87, 87, 87);
-    }
-}
-
-h2{
-  color: rgb(87, 87, 87);
-}
-
-
-a:hover,
-li:hover {
-    transition: all .3s ease-in-out;
-}
-
-// .titleElements {
-//     overflow: hidden;
-// }
-
-
-
-
-
-div.aboutContainer{
-    display:grid;
-    margin: auto;
-    padding: 4vh 0;
+//   width: 100%;
+//   overflow: hidden;
 }
 
 .homeContainer {
@@ -145,41 +19,58 @@ div.aboutContainer{
         }
 }
 
+// .svgArrows {
+//     grid-column: 2 / -1;
+// }
+
+div.aboutContainer{
+    display:grid;
+    margin: auto;
+    padding: 4vh 0;  
+}
 
 .bioContainer {
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     // grid-template-rows: auto;
     margin: 4vh auto;
+    justify-content: center;
     justify-items: center;
     align-items: start;
-    grid-gap: 2.5%;
+    // grid-gap: 2.5%;
+    min-height: fit-content;
         h3{
+            display: block;
+            // text-align: center;
             grid-column: 1/-1;
+            margin-bottom: 4vh;
         }
         div{
-            margin: 2vh 0 0 0;
-            // max-width: 600px;
-            min-width:100%;
-        }
-        div.bioContainer {
-            min-height: fit-content;
-        }
-        p:first-child{
-            margin-bottom: 2vh;
-        }
-        p{
+            // margin: 2vh 0 0 0;
+            max-width: 90vw;
+            align-self: start;
             padding: 0 5%;
+            margin: 0 0 2vh 0;
+        }
+        // p:last-child{
+        //     padding-bottom: 0vh;
+        // }
+        p{
+            // align-self: start;
             text-align: left;
             margin: 0 auto;
+            max-width: 65ch;
+            margin: 2vh 0;
         }
         .aboutImg{
-            align-self: center;
-            // max-width: 100%;
-            padding:  0 10% 2vh 10%;
-            min-width: 200px;
-            min-height: calc(200px * .618);
-            overflow: hidden;
+            width: 100%;
+            // padding:  0 10% 0 10%;
+            min-width: 280px;
+            // min-height: calc(200px * .618);
+            height: 100%;
+            max-width: 90vw;
+
+            // overflow: hidden;
             // height: calc(100%);
         }
 }

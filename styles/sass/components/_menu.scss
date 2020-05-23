@@ -1,0 +1,101 @@
+
+nav{
+  align-self: start;
+  padding-top: 20px;
+  display: grid;
+}
+
+nav li{
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+// hide checkbox
+nav input{
+  display: none;
+}
+
+nav label{
+  // border: 1px solid orange;
+  justify-self: end;
+  display: block;
+  width: 3rem;
+  height: 30px;
+  outline: none;
+}
+
+// hamburger... Menu built as elements for Animation
+.hamburger{
+  top: 45%;
+  display:block;
+  position: relative;  // margin: 40px 0 0 0;
+  transition: transform 250ms ease-in-out;
+  opacity: .5;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  width: 3rem;
+  height: 3px;
+  background-color:  #d94c3b ; 
+}
+.hamburger::before,
+.hamburger::after {
+ content: ''; 
+ position: absolute;
+ left:0;
+}
+.hamburger::before{
+  bottom: 8px;
+}
+.hamburger::after{
+  top: 8px;
+}
+
+ul.menuSub {
+    // border: 1px solid black;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+    justify-content: end;
+    width: 100%;
+    margin-top: 2rem;
+    gap: 1vw;
+    transform: all;
+    opacity: 0;
+    transform: all ;
+      li { 
+          text-align:right;
+          text-transform: uppercase;
+      }        
+}
+
+// displaying menuItems 
+.navToggle:hover .hamburger{
+  opacity: 1;
+  transition: all .4s ease-in-out;
+}
+.navToggle:checked ~.menuSub {
+    // visibility: visible;
+    opacity: 1;
+    transition: all .4s ease-in-out;
+}
+
+
+a:hover,
+li:hover {
+    transition: all .3s ease-in-out;
+}
+
+// ANIMATION
+// ROTATING Hamburger, create X
+.animatedNav .hamburger::after{
+  transform: rotate(90deg) translate(-8px); 
+}
+.animatedNav .hamburger{
+  transform: rotate(-45deg); 
+}
+.animatedNav .hamburger::before{
+  opacity: 0;  //hide "third" extra element of hamburger
+}
+// end -----------------------------
