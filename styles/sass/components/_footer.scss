@@ -1,0 +1,215 @@
+footer {
+    min-height: fit-content;
+    background-color:hsl(170, 52%, 95%);
+        h2{
+            color: #2aa7f0;
+            font-weight: 100;
+        }
+}
+
+footer h2{
+    color: #2aa7f0;
+    font-weight: 100;
+    font-size: calc(2.8rem + .8vw);
+}
+
+.shape5{
+    // clip-path: polygon(100% 0%, 100% 92%, 71% 100%, 0 90%, 0 0);
+    background: linear-gradient(180deg, hsl(49, 90%, 89%) 30%,  hsl(49, 90%, 69%)  100%);
+}
+
+.formContainer{
+    padding: calc(3vh + 30px) 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+form{
+    display: grid;
+    width: 100%;
+}
+
+.form{
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color:rgb(87, 87, 87);
+    height: 55px;
+    width: 90%;
+    max-width: 520px;
+    min-width: 260px;
+    margin: 5px auto;
+    overflow:hidden;
+        input { //styling input
+            width: 100%;
+            height: 100%;
+            padding-top: 20px; 
+            border: none;
+            background-color: inherit; 
+            color:rgb(87, 87, 87);
+            outline: none;
+        }
+        textArea{ //styling input
+            // min-width: 100%;
+            // min-height: 100%;
+            width: 30%;
+            padding-top: 20px; 
+            border: none;
+            // background-color: inherit; 
+            color:rgb(87, 87, 87);
+            outline: none;
+        }
+        label { //adding line to bottom only
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 10%;
+            width: 100%;
+            pointer-events: none;
+            margin: 0;
+            // border-bottom: 1px solid #de7f75;
+            border-bottom: 1px solid rgb(87, 87, 87);
+        }
+}
+
+.messageContainer{    
+    padding-top: 30px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.contentName
+.formSubject,
+.messageLabel,
+textarea{
+    width: 90%;
+    max-width: 520px;
+    min-width: 260px;
+}
+
+.messageLabel{  
+    margin: 0 auto;
+    color:rgb(87, 87, 87);
+}
+
+textarea{ 
+    padding-top: 5px; 
+    border: 1px solid rgb(187, 187, 187);
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.434);
+    color:rgb(87, 87, 87);
+    overflow: auto;
+}
+
+// wider line bottom again
+.form label::after {
+    content:"";
+    position: absolute;
+    left: 0;
+    bottom: -1px; 
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid #f3a626 ;
+    // border-bottom: 3px solid rgb(87, 87, 87);
+    transform: translateX(-100%);
+    transition: transform .4s ease;
+}
+
+.contentName {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all .4s ease;
+}
+
+.formSubmit {
+    margin: 1vh auto 3vh auto;
+}
+
+// animation...
+.form input:focus + .labelName .contentName,
+.form input:valid + .labelName .contentName {
+    transform: translateY(-115%);
+    // color: #2aa7f0;
+    color:  rgba(87, 87, 87, 0.66);
+    font-size: 1.4rem;
+}
+
+.form input:focus + .labelName::after, 
+.form input:valid + .labelName::after{
+    transform: translateX(0);
+    // color:  rgba(87, 87, 87, 0.66);
+}
+
+.fLinksContainer,
+.footerSocial  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+.footerSocial{
+    flex-wrap: nowrap;
+}
+footer .logo,
+.footerSocial,
+.pageNav{
+    width: calc(100% / 4);
+    padding: calc(1vh + 10px) 0;
+    flex-grow: 1; 
+}
+
+// Bottom Logo
+nav .logo {
+    text-align: left;
+}
+.logo p{
+    // color:  #d94c3b;
+    color: #f3a626;
+    font-weight: 700;
+    font-size: 3.6rem;
+    line-height: .8;
+    letter-spacing: -.3rem;
+    padding: 5px 7px 7px 4px;
+    text-transform: uppercase;
+        &::first-letter{
+            font-weight: 100;
+            // color: #e4981e;
+            color: rgba(87, 87, 87, 0.495);
+            margin: 0;
+        }
+}
+
+// Icons
+i{
+    font-size: 2.4rem;
+    color:  rgba(87, 87, 87, 0.66);
+    width: 45px;
+    text-align: center;
+}
+i:hover, i:focus {
+    // color: #2aa7f0;
+    color: #2f95d0;
+}
+
+
+// Back to Top
+.pageNav{
+    text-align: right;
+    a{
+        color: rgb(87, 87, 87);
+    }
+}
+
+.copyright {
+    margin: 0 auto;
+    text-align:center;
+    background-color: rgba(0, 0, 0, 0.18);
+    margin-top: calc(3vh + 20px);
+    padding: 10px;
+}
+

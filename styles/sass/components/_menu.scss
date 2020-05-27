@@ -1,102 +1,140 @@
-
-nav{
-  align-self: start;
-  padding-top: 15px;
-  display: grid;
-}
-
-nav li{
-  font-weight: 400;
-  font-size: 1.8rem;
-  line-height: 1.6;
-}
-// hide checkbox
-nav input{
-  display: none;
-}
-
-nav label{
-  // border: 1px solid orange;
-  justify-self: end;
-  display: block;
-  width: 44px;
-  height: 44px;
-  outline: none;
-}
-
-// hamburger... Menu built as elements for Animation
-.hamburger{
-  top: 45%;
-  display:block;
-  position: relative;  // margin: 40px 0 0 0;
-  transition: transform 250ms ease-in-out;
-  opacity: .5;
-  display: none; //REWORK for small Screens
-}
-
-.hamburger,
-.hamburger::before,
-.hamburger::after {
-  width: 44px;
-  height: 4px;
-  background-color:  #d94c3b ; 
-}
-.hamburger::before,
-.hamburger::after {
- content: ''; 
- position: absolute;
- left:0;
-}
-.hamburger::before{
-  bottom: 10px;
-}
-.hamburger::after{
-  top: 10px;
-}
-
+// Container for Menu Items
 ul.menuSub {
-    // border: 1px solid black;
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
-    justify-content: end;
-    width: 100%;
-    margin-top: 2rem;
-    gap: 1vw;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    justify-items: end; 
     transform: all;
-    // opacity: 0; //Rework for SML Screen
-    transform: all ;
-      li { 
-          text-align:right;
-          text-transform: uppercase;
+        li { 
+            
+            text-align:right;
+            text-transform: uppercase;
+            // spacing... around projects
+            &:nth-child(1){
+                margin-right: 2rem;
+            }
+            &:nth-child(3){
+                margin-right: 1rem;
+            }  
       }        
 }
 
-// displaying menuItems 
+nav{
+    width: 100%;
+    align-self: start;
+    padding-left: 25%;
+    display: grid;
+      input{
+        display: none;  // hide checkbox
+      }
+      // HAMBURGER, container
+      label{
+            padding: 0;
+            justify-self: end;
+            display: grid;
+            width: 44px;
+            height: 44px; 
+            outline: none;
+            align-content: start ;
+      }
+}
+
+.navToggle:focus .hamburger,
 .navToggle:hover .hamburger{
-  opacity: 1;
-  transition: all .4s ease-in-out;
+    opacity: 1;
+    transition: all .4s ease-in-out;
 }
 .navToggle:checked ~.menuSub {
-    // visibility: visible;
     opacity: 1;
     transition: all .4s ease-in-out;
 }
 
 
-a:hover,
-li:hover {
-    transition: all .3s ease-in-out;
-}
+// HAMBURGER... built as elements for Animation
+.hamburger{
+    display:block;
+    position: relative;  // margin: 40px 0 0 0;
+    transition: transform 250ms ease-in-out;
+    opacity: .7;
+    display: none; //REWORK for small Screens
+    &.hamburger,
+    &::before,
+    &::after {
+        width: 44px;
+        height: 4px;
+        // background-color:  #d94c3b ; 
+        background-color: #F3A626;
+    }
+      &::before,
+      &::after {
+          content: ''; 
+          position: absolute;
+          left:0;
+      }
+      &::before{
+          bottom: 10px;
+        }
+      &::after{
+          top: 10px;
+      }
+  }
 
 // ANIMATION
 // ROTATING Hamburger, create X
 .animatedNav .hamburger::after{
-  transform: rotate(90deg) translate(-10px); 
+    transform: rotate(90deg) translate(-10px); 
+    transition: all .4s ease-in-out;
 }
 .animatedNav .hamburger{
-  transform: rotate(-45deg); 
+    transform: rotate(-45deg); 
+    transition: all .2s ease-in-out;
 }
 .animatedNav .hamburger::before{
-  opacity: 0;  //hide "third" extra element of hamburger
+    opacity: 0;  //hide "third" extra element of hamburger
 }
 // end -----------------------------
+
+
+// Button Hover Effects
+/* Underline From Left */
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+//   right: 80%;
+    right: 100%;
+    bottom: 0;
+    background: #d94c3b ;
+    // background: #F3A626 ;
+    height: 2px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+// .mItem1:before {
+//    right: 65%;
+// }
+
+// .mItem3:before {
+//    right: 70%;
+// }
+
+
+.hvr-underline-from-left:hover:before, 
+// .hvr-underline-from-left:focus:before,
+.hvr-underline-from-left:active:before {
+  right: 0;
+}

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0  viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="keywords"
         content="Web Developer, HTML, CSS, Javascript, and React, Contact Info, Resume">
@@ -13,19 +13,18 @@
     <link rel="stylesheet" href="https://use.typekit.net/fug1ekk.css"> 
     <!-- Animate on Scroll - HTML Head Tag -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/eea5571693.js"
+            crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/style.css">
-    <!-- add favicon -->
     <!-- add icons -->
     <title>Frank Hoedl 2.0 - Front End Developer</title>
 </head>
 
 <body>
     <!-- HEADER ... -->
-    <!-- <canvas id="granim-canvas"></canvas> -->
     <header id="home" class="shape1" role="banner" >
-        <div class="homeContainer wrapper">
-            <nav class="menuMain">
-                <!-- <p >menu</p> -->
+        <div class="homeContainer">
+            <nav class="menuMain wrapper">
                 <label for="navToggleCheck" class="navToggle" role="navigation" aria-labelledby="Click to open dropdown menu" aria-haspopup="true"
                tabindex="0" >   
                     <span class="hamburger"></span>
@@ -33,22 +32,22 @@
                 <input type="checkbox" name="menuCheckbox" id="navToggleCheck" class="navToggle" >
                 <ul class="menuSub">
                     <li role="menuitem" class=menuButton>
-                        <a class="menuItem" href="#home" title="Got to Home">home</a>
+                        <a class="hvr-underline-from-left mItem1" href="#home" title="Got to Home">home</a>
                     </li>
                     <li class=menuButton>
-                        <a href="#about" title="Got to About">about</a>
+                        <a href="#projects" class="hvr-underline-from-left mItem2" title="Got to Projects">projects</a>
                     </li>
                     <li class=menuButton>
-                        <a href="#projects" title="Got to Projects">projects</a>
+                        <a href="#about" class="hvr-underline-from-left mItem3" title="Got to About">about</a>
                     </li>
                     <li class=menuButton>
-                        <a href="#contact" title="Got to Contact">contact</a>
+                        <a href="#contact" class="hvr-underline-from-left mItem4" title="Got to Contact">contact</a>
                     </li>
                 </ul>
             </nav>
 
             <!-- <h5>FH<h5> -->
-            <div class="titleElements">
+            <div class="titleElements wrapper">
                 <h1><span>frank</span>hoedl</h1>
                 <!-- <h2 class="tracking-in-expand-fwd">Front End Developer</h2> -->
                 <h2>I am a<span class=txt-type data-wait="2000" data-words='[ " Photographer", " Front End Developer", "lways learning ..." ]'></span>
@@ -73,7 +72,7 @@
                     <h3>ABOUT</h3>
                     <div class="personalInto">
                         <p>
-                        Hi, I'm Frank. As a professional photographer, I worked in the world of advertising, represented by one of the best "stills" production houses in Canada.  That experience taught me the value of a good team, and how to work collaboratively with creative professionals to provide solutions for the client.  I was lucky to have that career and the success that came with it. 
+                        Hi, I'm Frank. As a photographer, I worked in the world of advertising, represented by one of the best "stills" production houses in Canada.  That experience taught me the value of a good team, and how to work collaboratively with creative professionals to provide solutions for the client.  I was lucky to have that career and the success that came with it. 
                         </p> 
                         <p>
                         All the long hours and many espressos later... I'm still searching for the perfect espresso.  Over the last year, I decided to change course and have recently completed the front end development bootcamp at Juno College. I'm now a Junior Front End Developer. The only constant I know is change. I hope to help you make a positive one.
@@ -141,15 +140,16 @@
         <section  id="projects" class="projectContainer wrapper">
             <h3>projects</h3>
             <div class="card card1" data-aos="flip-right">
-                <div class="cardImg">
-                    <img src="" alt="project1">
+                <div class="cardImg cardImg1">
+                    <img src="./Assets/RasterFiles/mockup_MacbookPro_Forecaster.png" alt="project1">
+                    <img src="./Assets/RasterFiles/mockup_iPhoneX_Forecaster.png" alt="project1">      
                 </div>
                 <div class="cardInfo">
                     <h4>Forecaster</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ex temporibus voluptatum. Accusantium ad qui ratione iure laboriosam ea, natus cupiditate illo animi laudantium quos.</p>
+                    <p>A React project drawing on the popular OpenWeather API. Coupled with simple HTML and a clean approach to the CSS. </p>
                     <ul>
                     <li><a href="https://fhoedl.github.io/project5-frank-hoedl/" target="_blank">live site</a></li>
-                    <li></li><a href="https://github.com/fhoedl/project5-frank-hoedl" target="_blank">github repo</a></li>
+                    <li><a href="https://github.com/fhoedl/project5-frank-hoedl" target="_blank">github repo</a></li>
                     </ul>
                 </div> 
             </div>
@@ -157,29 +157,31 @@
             <div class="card card2" data-aos="flip-left">
                 <div class="cardInfo">
                     <h4>Who Told It Better</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, veniam. Nostrum molestiae, sit modi rerum iste amet aspernatur iusto dolorem ab quis doloribus nemo nihil.</p>
+                    <p>A React group project.  Two API calls trying to answer the question, was the movie or the book better. Built with Router for pagination, and SASS.</p>
                     <ul>
                         <li><a href="https://whotib.github.io/whoToldItBetter/" target="_blank">live site</a></li>
-                        <li></li><a href="https://github.com/whotib/whoToldItBetter " target="_blank">github repo</a></li>
+                        <li><a href="https://github.com/whotib/whoToldItBetter " target="_blank">github repo</a></li>
                     </ul>
                 </div>
-                <div class="cardImg">
-                    <img src="" alt="project2">
+                <div class="cardImg cardImg2">
+                    <img src="./Assets/RasterFiles/mockup_MacbookPro_WhoToldItBetter.png" alt="project2">
+                    <img src="./Assets/RasterFiles/mockup_iPhoneX_WhoToldItBetter.png"
+                        alt="project2">
+                    </div>
                 </div>
             </div>
 
             <div class="card card3"  data-aos="flip-right">
-                <div class="cardImg">
-                    <img src="" alt="project3">
+                <div class="cardImg cardImg3">
+                    <img src="./Assets/RasterFiles/mockup_MacbookPro_Delicious.png" alt="project3">
+                    <img src="./Assets/RasterFiles/mockup_iPhoneX_Delicious.png" alt="project3">
                 </div>
                 <div class="cardInfo">
-                    <h4>Project 3</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt,
-                        veniam. Nostrum molestiae, sit modi rerum iste amet aspernatur iusto
-                        dolorem ab quis doloribus nemo nihil.</p>
+                    <h4>Delicious</h4>
+                    <p>A PSD conversion utilizing HTML and SASS.  This project showcases the ability to implement a given design, and to create a responsive site adhering to that vision.</p>
                     <ul>
                         <li><a href="http://">live site</a></li>
-                        <li></li><a href="http://">github repo</a></li>
+                        <li><a href="http://">github repo</a></li>
                     </ul>
                 </div>
             </div>
@@ -189,38 +191,85 @@
     <!-- end MAIN -->
 
     <!-- FOOTER ... -->
-    <footer>
-        <nav>
-          <ul class="footerNav">
-              <li>
-                  <a href="#home" title="Got to Home">home</a>
-              </li>
-              <li>
-                  <a href="#about" title="Got to About">about</a>
-              </li>
-          </ul>
-      </nav>
+    <footer id="contact" class="shape5">
 
-      <div class="social__Link">
-          <ul class="footer2">
-              <li class="li__footer">
-                  <a href="https://twitter.com/frank_hoedl" title="Go to Twitter" target="_blank" rel="noopener">twitter</a>
-              </li>
-              <li class="li__footer">
-                  <a href="https://www.linkedin.com/in/frankhoedl" title="Go to Linkedin" target="_blank" rel="noopener">linkedIn</a>
-              </li>
-              <li class="li__footer">
-                  <a href="https://www.instagram.com/frankhoedl" title="Go to Instagram" target="_blank" rel="noopener">Instagram</a>
-              </li>
-              <li>
-                  <p><a href="mailto:frankhoedl2.0@gmail.com" target="_blank" rel="noopener">Get in touch</a> here!</p>
-              </li>
-          </ul>
-      </div>
+        <div class="formContainer wrapper">
+            <h2>Get in touch ...</h2>
+            <!-- <form action="/action_page.php" method="get"> -->
+            <form action="">
+                 <!-- first name -->
+                 <div class="form">
+                    <input type="text" name="name" autocomplete="off" required  title="required"/>
+                    <label for="name" class="labelName">
+                        <span class="contentName">NAME</span>
+                    </label>
+                </div>
+                <!-- email -->
+                <div class="form">
+                    <input type="email" name="mail" required title="required"/>
+                    <label for="mail" class="labelName">
+                        <span class="contentName">EMAIL</span>
+                    </label>
+                </div>
+                <!-- subject -->
+                <div class="form formSubject">
+                    <input type="text" name="subject" required/>
+                    <label for="subject" class="labelName">
+                        <span class="contentName">SUBJECT</span>
+                    </label>
+                </div>
+                <!-- message, textarea -->
+                <div class="messageContainer">
+                    <label for="message" class="messageLabel ">
+                        <span>MESSAGE</span>
+                    </label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <!-- submit -->
+                <div class="form formSubmit">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div> 
 
-      <p class="copyright">© 2020 frank hoedl</p>
+        <div class="fLinksContainer wrapper">
+            <div class="logo">
+                <p>fh</p>
+            </div>
+            <div>
+                <ul class="footerSocial">
+                    <li class="liFooter">
+                        <a href="https://twitter.com/frank_hoedl" title="Go to Twitter" target="_blank" rel="noopener" aria-label="Click link to Twitter page"></a><i aria-hidden="true" class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="liFooter">
+                        <a href="https://www.linkedin.com/in/frankhoedl" title="Go to Linkedin" target="_blank" rel="noopener"aria-label="Click link to LinkedIn page"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li class="liFooter">
+                        <a href="https://www.instagram.com/frankhoedl" title="Go to Instagram" target="_blank" rel="noopener" aria-label="Click link to Instagram page">
+                        <i aria-hidden="true" class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <p><a href="mailto:frankhoedl2.0@gmail.com" target="_blank" rel="noopener">
+                            <i aria-hidden="true" class="fas fa-envelope"></i>
+                            </a>
+                            <!-- <img src="./Assets/RasterFiles/iconfinder_gmail_1220367.png" alt="gmail logo" aria-hidden="true" aria-label="Click link for email"> -->
+                        </a></p>
+                    </li>
+                </ul>
+            </div>
+            <div class="pageNav ">
+                <a class="menuItem hvr-underline-from-left" href="#home">Back to Top</a>
+            </div>
+        </div>
+        
+        <p class="copyright">© 2020 frank hoedl</p>
     </footer>
     <!-- end FOOTER -->
+
+
+
 
     <!-- SVG's -->
     <article class="svgs">
@@ -507,7 +556,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
-            offset: 250, // offset (in px) from the original trigger point
+            offset: 0, // offset (in px) from the original trigger point
             delay: 0, // values from 0 to 3000, with step 50ms
             duration: 900, // values from 0 to 3000, with step 50ms
             easing: 'ease-in', // default easing for AOS animations

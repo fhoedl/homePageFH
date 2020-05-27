@@ -7,6 +7,23 @@ appFH.navBar = () => {
     })
 }
 
+// jQuery Smooth Scroll
+appFH.scroll = () => {
+    $('a').on('click', function(e) {
+        if(this.hash !== '') {
+            e.preventDefault();
+
+            const hash = this.hash;
+
+            $('html, body').animate({
+               scrollTop: $(hash).offset().top 
+            }, 800);
+        }
+        
+        ;
+    })
+}
+
 // appFH.arrow = () => {
 //     $('.svgArrows').on('click', function () {
 //         $(this).
@@ -74,9 +91,15 @@ class Typewriter {
 appFH.init = () => {
     appFH.navBar();
     appFH.typing();
+    appFH.scroll();
 }
 
 // DOCUMENT READY... with init FUNCTION CALL
 $(() => {
     appFH.init();
 })
+
+// Option2 -  jQuery Smooth scroll
+// $('a').on('click', function(e) {
+//     console.log(this.hash);
+// })
