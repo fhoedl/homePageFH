@@ -337,6 +337,28 @@ a, li {
   font-weight: 400;
 }
 
+.card li {
+  margin: 2vh 0 4vh 0;
+}
+
+.card a {
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 600;
+  padding: calc(1rem + .2vw) calc(1.3rem + .3vw);
+  border-radius: .6rem;
+  background-color: #f3a626;
+  color: #fff;
+  text-transform: uppercase;
+  width: 100px;
+  display: block;
+  text-align: center;
+}
+
+.card a:hover {
+  background-color: #d94c3b;
+  background-color: #2985ba;
+}
+
 img {
   margin: 0;
   padding: 0;
@@ -1089,10 +1111,51 @@ i:hover, i:focus {
   padding: 10px;
 }
 
+div .formSubmit {
+  margin-top: calc( 1vh + 20px);
+  margin-bottom: calc( 2vh + 25px);
+  border-radius: .6rem;
+  background-color: #d94c3b;
+  width: 20%;
+  padding: 0;
+  max-width: 200px;
+  min-width: 120px;
+}
+
+div .formSubmit input {
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 600;
+  padding: 0;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+  height: 45px;
+}
+
+div .formSubmit:hover,
+div .formSubmit input:hover {
+  background-color: #fff;
+  color: #2aa7f0;
+}
+
 @media (min-width: 1320px) {
   .projectContainer .card {
     -ms-grid-columns: (minmax(240px, 545px))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(240px, 545px));
+  }
+  .cardImg1 img:nth-child(2),
+  .cardImg2 img:nth-child(2),
+  .cardImg3 img:nth-child(2) {
+    bottom: 15.4%;
+  }
+  .cardImg2 img:nth-child(2) {
+    height: 58%;
+    bottom: 22%;
+  }
+  .cardImg3 img:nth-child(2) {
+    height: 60%;
+    bottom: 22%;
   }
 }
 
@@ -1101,14 +1164,20 @@ i:hover, i:focus {
   .cardImg2 img:nth-child(2),
   .cardImg3 img:nth-child(2) {
     bottom: 12%;
+    top: 16%;
+  }
+  .cardImg1 img:nth-child(2) {
+    height: 58%;
+    bottom: 3%;
   }
   .cardImg2 img:nth-child(2) {
-    height: 70%;
+    height: 58%;
     bottom: 3%;
   }
   .cardImg3 img:nth-child(2) {
-    height: 70.25%;
+    height: 60%;
     bottom: 3%;
+    top: 14%;
   }
 }
 
@@ -1178,9 +1247,6 @@ i:hover, i:focus {
     display: flex;
     margin: auto;
     text-align: center;
-  }
-  div.cardInfo ul li {
-    width: 140px;
   }
   .cardInfo {
     background-color: inherit;

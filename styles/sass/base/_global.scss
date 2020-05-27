@@ -95,6 +95,30 @@ a, li{
     font-weight: 400;
 }
 
+.card li{
+    margin: 2vh 0 4vh 0;
+
+}
+
+// .formSubmit,
+.card a {
+  // border: 1px solid red;
+  font-family: $primaryFont;
+  font-weight: 600;
+  padding:calc(1rem + .2vw) calc(1.3rem + .3vw) ;
+  border-radius: .6rem;
+  background-color: $accentColor;
+  color: #fff;
+  text-transform: uppercase;
+  width: 100px;
+  display:block;
+  text-align: center;
+}
+.card a:hover{
+  background-color:$dkaccentColor;
+   background-color:#2985ba ;
+}
+
 // IMAGE - Removing white border
 img {
   margin: 0;
