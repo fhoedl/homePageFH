@@ -86,10 +86,8 @@
 .card{
     display:grid;
     grid-template-columns: repeat(auto-fit,minmax(200px, 480px));
-    // grid-template-columns: repeat(auto-fit,minmax(240px, 1fr));
     justify-content: center;
     margin: 3vh auto;
-    // grid-gap: 1.5vw;
     width: 100%;
 }
 

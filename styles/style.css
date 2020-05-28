@@ -341,11 +341,12 @@ a, li {
   margin: 2vh 0 4vh 0;
 }
 
+div .formSubmit,
 .card a {
   font-family: "neue-haas-grotesk-display", sans-serif;
-  font-weight: 600;
-  padding: calc(1rem + .2vw) calc(1.3rem + .3vw);
-  border-radius: .6rem;
+  font-weight: 500;
+  padding: calc(.7rem + .2vw) calc(1rem + .3vw);
+  border-radius: .4rem;
   background-color: #f3a626;
   color: #fff;
   text-transform: uppercase;
@@ -354,6 +355,21 @@ a, li {
   text-align: center;
 }
 
+div .formSubmit {
+  margin-top: calc( 1vh + 20px);
+  margin-bottom: calc( 2vh + 25px);
+}
+
+div .formSubmit input {
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
+  height: 45px;
+}
+
+div .formSubmit:hover,
+div .formSubmit input:hover,
 .card a:hover {
   background-color: #d94c3b;
   background-color: #2985ba;
@@ -1109,34 +1125,6 @@ i:hover, i:focus {
   background-color: rgba(0, 0, 0, 0.18);
   margin-top: calc(3vh + 20px);
   padding: 10px;
-}
-
-div .formSubmit {
-  margin-top: calc( 1vh + 20px);
-  margin-bottom: calc( 2vh + 25px);
-  border-radius: .6rem;
-  background-color: #d94c3b;
-  width: 20%;
-  padding: 0;
-  max-width: 200px;
-  min-width: 120px;
-}
-
-div .formSubmit input {
-  font-family: "neue-haas-grotesk-display", sans-serif;
-  font-weight: 600;
-  padding: 0;
-  color: #fff;
-  text-transform: uppercase;
-  -webkit-transform: translateY(10%);
-          transform: translateY(10%);
-  height: 45px;
-}
-
-div .formSubmit:hover,
-div .formSubmit input:hover {
-  background-color: #fff;
-  color: #2aa7f0;
 }
 
 @media (min-width: 1320px) {

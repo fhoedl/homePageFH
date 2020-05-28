@@ -94,19 +94,17 @@ a, li{
     color: black;
     font-weight: 400;
 }
-
 .card li{
     margin: 2vh 0 4vh 0;
-
 }
 
-// .formSubmit,
+div .formSubmit,
 .card a {
   // border: 1px solid red;
   font-family: $primaryFont;
-  font-weight: 600;
-  padding:calc(1rem + .2vw) calc(1.3rem + .3vw) ;
-  border-radius: .6rem;
+  font-weight: 500;
+  padding:calc(.7rem + .2vw) calc(1rem + .3vw) ;
+  border-radius: .4rem;
   background-color: $accentColor;
   color: #fff;
   text-transform: uppercase;
@@ -114,6 +112,18 @@ a, li{
   display:block;
   text-align: center;
 }
+div .formSubmit{
+    margin-top: calc( 1vh + 20px);
+    margin-bottom: calc( 2vh + 25px);
+        input{
+            color: #fff;
+            text-transform: uppercase;
+            transform: translateY(-30%);
+            height: 45px;
+        }
+}
+div .formSubmit:hover,
+div .formSubmit input:hover,
 .card a:hover{
   background-color:$dkaccentColor;
    background-color:#2985ba ;

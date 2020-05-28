@@ -196,7 +196,6 @@ i:hover, i:focus {
     color: #2f95d0;
 }
 
-
 // Back to Top
 .pageNav{
     text-align: right;
@@ -212,37 +211,3 @@ i:hover, i:focus {
     margin-top: calc(3vh + 20px);
     padding: 10px;
 }
-
-div .formSubmit{
-    margin-top: calc( 1vh + 20px);
-    margin-bottom: calc( 2vh + 25px);
-    border-radius: .6rem;
-    background-color: $dkaccentColor;
-    width: 20%;
-    padding: 0;
-    max-width: 200px;
-    min-width: 120px;
-        input{
-            font-family: $primaryFont;
-            font-weight: 600;
-            padding: 0;
-            color: #fff;
-            text-transform: uppercase;
-            transform: translateY(10%);
-            height: 45px;
-        }
-}
-
-div .formSubmit:hover,
-div .formSubmit input:hover {
-    background-color: #fff;
-    // background-color: #519ecb; 
-    // background-color: #84c1c4; 
-    color:  #2aa7f0 ;
-    // color: #add5d7;
-    // color:  #fff;
-}
-
-// div .formSubmit:hover {
-//     background-color: #fff;
-// }
