@@ -3,7 +3,7 @@ ul.menuSub {
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     justify-items: end; 
-    transform: all;
+    transform: all .4s ease-in-out;
         li { 
             
             text-align:right;
@@ -35,7 +35,19 @@ nav{
             height: 44px; 
             outline: none;
             align-content: start ;
+            position: relative;
       }
+}
+
+.navToggle div{
+    z-index: 1;
+    position: absolute;
+    left: -115%;
+    top: -25%;
+    font-weight: 400;
+    font-size: calc(1.5rem + .2vw);
+    line-height: 1.6;
+    text-transform: uppercase;
 }
 
 .navToggle:focus .hamburger,
@@ -51,11 +63,15 @@ nav{
 
 // HAMBURGER... built as elements for Animation
 .hamburger{
-    display:block;
+    position: absolute;
+    // display:block;
+    z-index:10;
     position: relative;  // margin: 40px 0 0 0;
-    transition: transform 250ms ease-in-out;
-    opacity: .7;
+    transform: all 250ms ease-in-out;
+    // opacity: .7;
+    // ------------------
     display: none; //REWORK for small Screens
+    // ------------------
     &.hamburger,
     &::before,
     &::after {
@@ -94,6 +110,7 @@ nav{
 // end -----------------------------
 
 
+
 // Button Hover Effects
 /* Underline From Left */
 .hvr-underline-from-left {
@@ -108,7 +125,7 @@ nav{
 .hvr-underline-from-left:before {
     content: "";
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     left: 0;
 //   right: 80%;
     right: 100%;

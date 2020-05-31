@@ -671,8 +671,8 @@ ul.menuSub {
   -ms-grid-columns: (minmax(80px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   justify-items: end;
-  -webkit-transform: all;
-          transform: all;
+  -webkit-transform: all .4s ease-in-out;
+          transform: all .4s ease-in-out;
 }
 
 ul.menuSub li {
@@ -712,6 +712,18 @@ nav label {
   outline: none;
   -ms-flex-line-pack: start;
       align-content: start;
+  position: relative;
+}
+
+.navToggle div {
+  z-index: 1;
+  position: absolute;
+  left: -115%;
+  top: -25%;
+  font-weight: 400;
+  font-size: calc(1.5rem + .2vw);
+  line-height: 1.6;
+  text-transform: uppercase;
 }
 
 .navToggle:focus .hamburger,
@@ -728,13 +740,11 @@ nav label {
 }
 
 .hamburger {
-  display: block;
+  position: absolute;
+  z-index: 10;
   position: relative;
-  -webkit-transition: -webkit-transform 250ms ease-in-out;
-  transition: -webkit-transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
-  opacity: .7;
+  -webkit-transform: all 250ms ease-in-out;
+          transform: all 250ms ease-in-out;
   display: none;
 }
 
@@ -791,7 +801,7 @@ nav label {
 .hvr-underline-from-left:before {
   content: "";
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   left: 0;
   right: 100%;
   bottom: 0;
@@ -1276,14 +1286,39 @@ i:hover, i:focus {
 @media (max-width: 600px), screen and (max-height: 475px) {
   label .hamburger {
     display: block;
-    margin-top: 20px;
     -webkit-transform: all;
             transform: all;
   }
   ul.menuSub {
     opacity: 0;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    justify-items: center;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  ul.menuSub li {
+    text-align: center;
+  }
+  ul.menuSub li:nth-child(1) {
+    margin-right: 0rem;
+  }
+  ul.menuSub li:nth-child(3) {
+    margin-right: 0rem;
+  }
+  nav {
+    padding-left: 0;
   }
   .projectContainer {
     width: 80%;

@@ -4,7 +4,16 @@ const appFH = {};
 appFH.navBar = () => {
     $(`label.navToggle`).on(`click`, function(){
         $(this).toggleClass('animatedNav')
+        // $('.navToggle').prop('checked', false);
     })
+}
+
+appFH.link = () => {
+    $(`.menuSub`).on(`click`,`li`,function (e) {
+		$(`.navToggle`)
+            .toggleClass("animatedNav")
+			.prop(`checked`, false);
+		});
 }
 
 // jQuery Smooth Scroll
@@ -92,6 +101,7 @@ appFH.init = () => {
     appFH.navBar();
     appFH.typing();
     appFH.scroll();
+    appFH.link();
 }
 
 // DOCUMENT READY... with init FUNCTION CALL

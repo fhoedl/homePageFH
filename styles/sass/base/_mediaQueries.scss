@@ -170,13 +170,39 @@
     // Top Menu Nav
     label .hamburger{
         display: block;
-        margin-top: 20px;
+        // margin-top: 20px;
         transform: all;
     }
     ul.menuSub {
         opacity: 0;
-        transition: all .4s ease-in-out;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left:0;
+        display:grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-content: space-around;
+        background-color: rgba(255, 255, 255, 0.8);
+            li { 
+                text-align:center;
+                // spacing... around projects
+                &:nth-child(1){
+                    margin-right: 0rem;
+                }
+                &:nth-child(3){
+                    margin-right: 0rem;
+                }  
+      } 
     }
+    nav{
+        padding-left: 0;
+    }
+
 
     .projectContainer{
         width:80%;
