@@ -244,6 +244,21 @@ template {
   overflow: hidden;
 }
 
+.shape6 {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(35%, #faf2c2), to(#fce064));
+  background: linear-gradient(180deg, #faf2c2 35%, #fce064 100%);
+}
+
+.shape4 {
+  background: #dcf4f0;
+  background: linear-gradient(172deg, #f8fbfb 40%, #d3edee 100%);
+}
+
+.shape5 {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(35%, #fdf7d8), to(#fce682));
+  background: linear-gradient(180deg, #fdf7d8 35%, #fce682 100%);
+}
+
 html {
   font-size: 62.5%;
   line-height: 1.5;
@@ -270,6 +285,12 @@ body {
   margin: 0 auto;
   max-width: 1280px;
   width: 88%;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 h1 {
@@ -341,7 +362,7 @@ a, li {
   margin: 2vh 0 4vh 0;
 }
 
-div .formSubmit,
+div.formSubmit,
 .card a {
   font-family: "neue-haas-grotesk-display", sans-serif;
   font-weight: 500;
@@ -371,14 +392,7 @@ div .formSubmit input {
 div .formSubmit:hover,
 div .formSubmit input:hover,
 .card a:hover {
-  background-color: #d94c3b;
-  background-color: #2985ba;
-}
-
-img {
-  margin: 0;
-  padding: 0;
-  border: none;
+  background-color: #2f95d0;
 }
 
 .txt-type > .txt {
@@ -658,22 +672,6 @@ img {
   clip-path: polygon(100% 92%, 100% 100%, 71% 100%);
 }
 
-.svgArrows {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  max-height: 60px;
-  max-width: 60px;
-  stroke: white;
-  stroke-width: 2;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: right;
-      justify-self: right;
-  margin-right: 5%;
-  grid-column: 2/-1;
-}
-
 ul.menuSub {
   display: -ms-grid;
   display: grid;
@@ -723,17 +721,6 @@ nav label {
   position: relative;
 }
 
-.navToggle div {
-  z-index: 1;
-  position: absolute;
-  left: -115%;
-  top: -25%;
-  font-weight: 400;
-  font-size: calc(1.5rem + .2vw);
-  line-height: 1.6;
-  text-transform: uppercase;
-}
-
 .navToggle:focus .hamburger,
 .navToggle:hover .hamburger {
   opacity: 1;
@@ -759,7 +746,7 @@ nav label {
 .hamburger.hamburger, .hamburger::before, .hamburger::after {
   width: 44px;
   height: 4px;
-  background-color: #F3A626;
+  background-color: #f3a626;
 }
 
 .hamburger::before, .hamburger::after {
@@ -794,7 +781,6 @@ nav label {
   opacity: 0;
 }
 
-/* Underline From Left */
 .hvr-underline-from-left {
   display: inline-block;
   vertical-align: middle;
@@ -826,6 +812,10 @@ nav label {
 .hvr-underline-from-left:hover:before,
 .hvr-underline-from-left:active:before {
   right: 0;
+}
+
+.skills {
+  margin-top: 3vh;
 }
 
 .skills ul {
@@ -917,11 +907,6 @@ footer h2 {
   font-size: calc(2.8rem + .8vw);
 }
 
-.shape5 {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #fcf3ca), to(#f7dd69));
-  background: linear-gradient(180deg, #fcf3ca 30%, #f7dd69 100%);
-}
-
 .formContainer {
   padding: calc(3vh + 30px) 0 0 0;
   display: -webkit-box;
@@ -984,7 +969,7 @@ form {
   width: 100%;
   pointer-events: none;
   margin: 0;
-  border-bottom: 1px solid #575757;
+  border-bottom: 1px solid rgba(87, 87, 87, 0.5);
 }
 
 .messageContainer {
@@ -1016,7 +1001,7 @@ textarea {
   padding-top: 5px;
   border: 1px solid #bbbbbb;
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.434);
+  background-color: #f9f4de;
   color: #575757;
   overflow: auto;
 }
@@ -1028,7 +1013,7 @@ textarea {
   bottom: -1px;
   height: 100%;
   width: 100%;
-  border-bottom: 3px solid #f3a626;
+  border-bottom: 1px solid #2f95d0;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
   -webkit-transition: -webkit-transform .4s ease;
@@ -1053,7 +1038,7 @@ textarea {
 .form input:valid + .labelName .contentName {
   -webkit-transform: translateY(-115%);
           transform: translateY(-115%);
-  color: rgba(87, 87, 87, 0.66);
+  color: rgba(87, 87, 87, 0.4);
   font-size: 1.4rem;
 }
 
@@ -1120,7 +1105,8 @@ nav .logo {
 
 i {
   font-size: 2.4rem;
-  color: rgba(87, 87, 87, 0.66);
+  color: #575757;
+  opacity: .66;
   width: 45px;
   text-align: center;
 }
@@ -1140,7 +1126,7 @@ i:hover, i:focus {
 .copyright {
   margin: 0 auto;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.18);
+  background-color: rgba(87, 87, 87, 0.25);
   margin-top: calc(3vh + 20px);
   padding: 10px;
 }
@@ -1150,48 +1136,24 @@ i:hover, i:focus {
     -ms-grid-columns: (minmax(240px, 545px))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(240px, 545px));
   }
-  .cardImg1 img:nth-child(2),
+  .card img:nth-child(2) {
+    height: 58%;
+    bottom: 13.5%;
+  }
   .cardImg2 img:nth-child(2),
   .cardImg3 img:nth-child(2) {
-    bottom: 15.4%;
-  }
-  .cardImg2 img:nth-child(2) {
-    height: 58%;
-    bottom: 22%;
-  }
-  .cardImg3 img:nth-child(2) {
-    height: 60%;
-    bottom: 22%;
+    bottom: 19.5%;
   }
 }
 
 @media only screen and (max-device-width: 1319px) and (min-device-width: 1171px) {
-  .cardImg1 img:nth-child(2),
-  .cardImg2 img:nth-child(2),
-  .cardImg3 img:nth-child(2) {
-    bottom: 12%;
-    top: 16%;
-  }
-  .cardImg1 img:nth-child(2) {
+  .cardImg img:nth-child(2) {
+    bottom: 24%;
     height: 58%;
-    bottom: 3%;
-  }
-  .cardImg2 img:nth-child(2) {
-    height: 58%;
-    bottom: 3%;
-  }
-  .cardImg3 img:nth-child(2) {
-    height: 60%;
-    bottom: 3%;
-    top: 14%;
   }
 }
 
 @media (max-width: 1170px) {
-  .skills ul {
-    max-width: 510px;
-    margin: 0 auto;
-  }
   .projectContainer .card {
     -ms-grid-columns: (minmax(240px, 545px))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(240px, 545px));
@@ -1292,6 +1254,11 @@ i:hover, i:focus {
   .bioContainer p:first-of-type {
     margin-top: calc(0vh + 10px);
   }
+  .skills ul {
+    max-width: 510px;
+    margin: 0 auto;
+    margin-bottom: 4vh;
+  }
 }
 
 @media (max-width: 600px), screen and (max-height: 475px) {
@@ -1332,6 +1299,9 @@ i:hover, i:focus {
   }
   nav {
     padding-left: 0;
+  }
+  .navToggle div {
+    opacity: 0;
   }
   .projectContainer {
     width: 80%;
@@ -1376,5 +1346,20 @@ i:hover, i:focus {
   .pageNav {
     text-align: left;
     padding-left: 10px;
+  }
+  .projectContainer {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .projSmlWrap {
+    width: 85%;
+  }
+  .card3 {
+    width: 85%;
+  }
+  .skills ul {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 3vh;
   }
 }

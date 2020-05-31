@@ -1,14 +1,13 @@
-// Container for Menu Items
+
 ul.menuSub {
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     justify-items: end; 
     transform: all .4s ease-in-out;
         li { 
-            // border: 1px solid red;
             text-align:right;
             text-transform: uppercase;
-            // spacing... around projects
+        // spacing... around menu items
             &:nth-child(1){
                 margin-right: 2rem;
             }
@@ -19,16 +18,13 @@ ul.menuSub {
 }
 
 nav{
-    // width: 80%;
     align-self: start;
     padding-left: 25%;
     display: grid;
-    // justify-content: right;
       input{
-        display: none;  // hide checkbox
-      }
-      // HAMBURGER, container
-      label{
+            display: none;  // hide checkbox
+      }    
+      label{    // HAMBURGER, container
             padding: 0;
             justify-self: end;
             display: grid;
@@ -39,17 +35,18 @@ nav{
             position: relative;
       }
 }
-
-.navToggle div{
-    z-index: 1;
-    position: absolute;
-    left: -115%;
-    top: -25%;
-    font-weight: 400;
-    font-size: calc(1.5rem + .2vw);
-    line-height: 1.6;
-    text-transform: uppercase;
-}
+// Temporarily Disabled
+// .navToggle div{
+//     z-index: 1;
+//     position: absolute;
+//     left: -50px;
+//     bottom: 10px;
+//     font-weight: 400;
+//     font-size: calc(1.5rem + .2vw);
+//     line-height: 1.6;
+//     text-transform: uppercase;
+//     opacity: 0;
+// }
 
 .navToggle:focus .hamburger,
 .navToggle:hover .hamburger{
@@ -65,37 +62,32 @@ nav{
 // HAMBURGER... built as elements for Animation
 .hamburger{
     position: absolute;
-    // display:block;
     z-index:10;
-    position: relative;  // margin: 40px 0 0 0;
+    position: relative; 
     transform: all 250ms ease-in-out;
-    // opacity: .7;
-    // ------------------
-    display: none; //REWORK for small Screens
-    // ------------------
-    &.hamburger,
-    &::before,
-    &::after {
-        width: 44px;
-        height: 4px;
-        // background-color:  #d94c3b ; 
-        background-color: #F3A626;
-    }
-      &::before,
-      &::after {
-          content: ''; 
-          position: absolute;
-          left:0;
-      }
-      &::before{
-          bottom: 10px;
+    display: none; 
+        &.hamburger,
+        &::before,
+        &::after {
+            width: 44px;
+            height: 4px;
+            background-color: $accentColor;
         }
-      &::after{
-          top: 10px;
-      }
+        &::before,
+        &::after {
+            content: ''; 
+            position: absolute;
+            left:0;
+        }
+        &::before{
+            bottom: 10px;
+            }
+        &::after{
+            top: 10px;
+        }
   }
 
-// ANIMATION
+// ANIMATIONS
 // ROTATING Hamburger, create X
 .animatedNav .hamburger::after{
     transform: rotate(90deg) translate(-10px); 
@@ -110,29 +102,24 @@ nav{
 }
 // end -----------------------------
 
-
-
-// Button Hover Effects
-/* Underline From Left */
+// Button Hover Effects... Underline
 .hvr-underline-from-left {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
-  overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
 }
 .hvr-underline-from-left:before {
     content: "";
     position: absolute;
     z-index: 1;
     left: 0;
-//   right: 80%;
     right: 100%;
     bottom: 0;
-    background: #d94c3b ;
-    // background: #F3A626 ;
+    background: $dkAccentColor;
     height: 2px;
     -webkit-transition-property: right;
     transition-property: right;
@@ -141,18 +128,8 @@ nav{
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
-
-// .mItem1:before {
-//    right: 65%;
-// }
-
-// .mItem3:before {
-//    right: 70%;
-// }
-
-
 .hvr-underline-from-left:hover:before, 
-// .hvr-underline-from-left:focus:before,
 .hvr-underline-from-left:active:before {
-  right: 0;
+    right: 0;
 }
+// end -----------------------------

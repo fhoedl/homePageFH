@@ -1,11 +1,16 @@
 // SVG's
+.skills{
+        margin-top: 3vh;
+}
+
 .skills ul{
     display: grid;
     width: 100%;
     grid-template-columns:repeat(auto-fit, minmax(100px, 1fr));
     grid-gap: 4px;
     justify-content: center;
-    padding:0;
+    padding: 0;
+    // padding-bottom: 4vh;
 }
 .svgContainer {
     // border: 1px solid #999;

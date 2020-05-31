@@ -22,10 +22,18 @@ body {
     padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
+// Wrapper
 .wrapper {
     margin: 0 auto;
     max-width: 1280px;
     width: 88%;
+}
+
+// IMAGE - Removing white border
+img {
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 //Fonts
@@ -80,7 +88,6 @@ h5 {
   // display: block;
 }
 
-
 p, li, a{
   font-weight: 300;
   font-size: calc(1.5rem + .2vw);
@@ -98,9 +105,10 @@ a, li{
     margin: 2vh 0 4vh 0;
 }
 
-div .formSubmit,
+// BUTTONS
+div.formSubmit,
 .card a {
-  // border: 1px solid red;
+  // border: 1px solid rgb(0, 30, 255);
   font-family: $primaryFont;
   font-weight: 500;
   padding:calc(.7rem + .2vw) calc(1rem + .3vw) ;
@@ -125,13 +133,7 @@ div .formSubmit{
 div .formSubmit:hover,
 div .formSubmit input:hover,
 .card a:hover{
-  background-color:$dkaccentColor;
-   background-color:#2985ba ;
+   background-color: $coolAccentColor;
 }
+// end buttons -----------------------
 
-// IMAGE - Removing white border
-img {
-  margin: 0;
-  padding: 0;
-  border: none;
-}
