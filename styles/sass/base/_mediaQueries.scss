@@ -10,6 +10,7 @@
         // height: 50%;
     }
 
+
     // .cardImg1 img:nth-child(2){
     //     height: 58%;
     //     bottom: 3%;
@@ -146,6 +147,9 @@
                 }
         }
     }
+    div.cardInfo.info1 h4 {
+        margin-top: 0vh;
+    }
 
     .card2 .cardInfo ul {
 	text-align: center;
@@ -170,7 +174,7 @@
     // Top Menu Nav
     label .hamburger{
         display: block;
-        // margin-top: 20px;
+        margin-top: 20px;
         transform: all;
     }
     ul.menuSub {
@@ -187,6 +191,7 @@
         grid-template-columns: 1fr;
         justify-items: center;
         align-content: space-around;
+        padding: 15vh 0;
         background-color: rgba(255, 255, 255, 0.8);
             li { 
                 text-align:center;

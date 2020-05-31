@@ -451,6 +451,11 @@ img {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin: 2.5%;
+  width: 100%;
 }
 
 .aboutContainer {
@@ -482,6 +487,7 @@ img {
 
 .bioContainer h3 {
   max-width: 100vw;
+  padding: 0 2.5%;
   display: block;
   grid-column: 1/-1;
   padding-bottom: 3vh;
@@ -526,6 +532,9 @@ img {
 
 .projectContainer h3 {
   padding: 0 0 1.5vh 0;
+  max-width: 100vw;
+  padding: 0 2.5%;
+  margin-bottom: 4vh;
 }
 
 .card {
@@ -689,7 +698,6 @@ ul.menuSub li:nth-child(3) {
 }
 
 nav {
-  width: 100%;
   -ms-grid-row-align: start;
       align-self: start;
   padding-left: 25%;
@@ -1266,6 +1274,9 @@ i:hover, i:focus {
     display: inline-block;
     margin-right: 5%;
   }
+  div.cardInfo.info1 h4 {
+    margin-top: 0vh;
+  }
   .card2 .cardInfo ul {
     text-align: center;
   }
@@ -1286,6 +1297,7 @@ i:hover, i:focus {
 @media (max-width: 600px), screen and (max-height: 475px) {
   label .hamburger {
     display: block;
+    margin-top: 20px;
     -webkit-transform: all;
             transform: all;
   }
@@ -1306,6 +1318,7 @@ i:hover, i:focus {
     justify-items: center;
     -ms-flex-line-pack: distribute;
         align-content: space-around;
+    padding: 15vh 0;
     background-color: rgba(255, 255, 255, 0.8);
   }
   ul.menuSub li {
