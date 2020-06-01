@@ -32,27 +32,28 @@
     width: 70%;
     height: 70%;
     margin: auto;
-    filter: grayscale(80%) ;
+    // filter: grayscale(100%) ;
     transform: all;
+    opacity: 70%;
 }
 
-.svgIconGitHub,
-.svgIconReact,
-.svgIconSASS,
-.svgIconJS {
-    filter: grayscale(80%) brightness(.8);
-    transform: all;
-}
-.svgIconPS {
-    filter: grayscale(80%) contrast(.7) brightness(1.1);
-    transform: all;
-}
-.svgIconC1 {
-    filter: grayscale(80%) brightness(.7) contrast(1.5) ;
-    transform: all;
-}
+// .svgIconGitHub,
+// .svgIconReact,
+// .svgIconSASS,
+// .svgIconJS {
+//     filter: grayscale(100%) brightness(.8);
+//     transform: all;
+// }
+// .svgIconPS {
+//     filter: grayscale(80%) contrast(.7) brightness(1.1);
+//     transform: all;
+// }
+// .svgIconC1 {
+//     filter: grayscale(100%) brightness(.7) contrast(1.5) ;
+//     transform: all;
+// }
 
-.svgIcon:hover {
-    transition: all .3s ease-in;
-    filter: unset;
-}
+// .svgIcon:hover {
+//     transition: all .3s ease-in;
+//     filter: unset;
+// }

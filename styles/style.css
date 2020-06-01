@@ -251,7 +251,7 @@ template {
 
 .shape4 {
   background: #dcf4f0;
-  background: linear-gradient(172deg, #f8fbfb 40%, #d3edee 100%);
+  background: linear-gradient(172deg, #f2f8f8 40%, #b6e0e2 100%);
 }
 
 .shape5 {
@@ -656,6 +656,13 @@ div .formSubmit input:hover,
       justify-self: left;
 }
 
+symbol g path,
+symbol path,
+svg style {
+  fill: #11426c;
+  fill-opacity: .4;
+}
+
 .shape1 {
   background: #dcf4f0;
   background: linear-gradient(172deg, #f0f5f4 30%, #8bc3c6 100%);
@@ -852,41 +859,9 @@ nav label {
   width: 70%;
   height: 70%;
   margin: auto;
-  -webkit-filter: grayscale(80%);
-          filter: grayscale(80%);
   -webkit-transform: all;
           transform: all;
-}
-
-.svgIconGitHub,
-.svgIconReact,
-.svgIconSASS,
-.svgIconJS {
-  -webkit-filter: grayscale(80%) brightness(0.8);
-          filter: grayscale(80%) brightness(0.8);
-  -webkit-transform: all;
-          transform: all;
-}
-
-.svgIconPS {
-  -webkit-filter: grayscale(80%) contrast(0.7) brightness(1.1);
-          filter: grayscale(80%) contrast(0.7) brightness(1.1);
-  -webkit-transform: all;
-          transform: all;
-}
-
-.svgIconC1 {
-  -webkit-filter: grayscale(80%) brightness(0.7) contrast(1.5);
-          filter: grayscale(80%) brightness(0.7) contrast(1.5);
-  -webkit-transform: all;
-          transform: all;
-}
-
-.svgIcon:hover {
-  -webkit-transition: all .3s ease-in;
-  transition: all .3s ease-in;
-  -webkit-filter: unset;
-          filter: unset;
+  opacity: 70%;
 }
 
 footer {
@@ -1333,6 +1308,13 @@ i:hover, i:focus {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+  .projectContainer {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .projSmlWrap {
+    width: 100%;
   }
 }
 

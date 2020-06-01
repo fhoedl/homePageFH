@@ -6,9 +6,6 @@ $primaryFont: "neue-haas-grotesk-display", sans-serif;  //100, 200, 400, 500, 60
 $secondaryFont: franklin-gothic-atf, sans-serif ;  // 100, 200, 300, 400, 500
 // 200
 
-
-// $primaryColor:  ;
-// $secondaryColor:  ;
 $accentColor:   #f3a626 ;
 $dkAccentColor: #d94c3b; 
 $coolAccentColor: #2f95d0;
@@ -22,15 +19,13 @@ $dkTypeColor:  rgb(87, 87, 87);
 .shape4{
     // clip-path: polygon(100% 0%, 100% 92%, 71% 100%, 0 90%, 0 0);
     background: rgb(220,244,240);
-    background: linear-gradient(172deg, hsl(183, 30%, 98%) 40%, hsl(183, 44%, 88%) 100%);
+    // background: linear-gradient(172deg, hsl(183, 30%, 98%) 40%, hsl(183, 44%, 88%) 100%);    
+    background: linear-gradient(172deg, hsl(183, 30%, 96%) 40%, hsl(183, 44%, 80%) 100%);
 }
 
 .shape5{
     background: linear-gradient(180deg, hsl(51, 90%, 92%) 35%,  hsl(49, 96%, 75%)  100%);
 }
-
-// $lightPrimaryColor:  ;
-// $darkPrimaryColor:  ;
 
 // Reference Colors
 // #add5d7 - initial background - pale green/blue
@@ -40,41 +35,6 @@ $dkTypeColor:  rgb(87, 87, 87);
 // #d94c3b - reddish tone
 
 
-//  Neue Haas Grotesk Display Pro 25 Thin
-// font-family: neue-haas-grotesk-display, sans-serif;
-// font-weight: 200;
-// font-style: normal;
 
-// Neue Haas Grotesk Display Pro 45 Light
-// font-weight: 400;
-
-// Neue Haas Grotesk Display Pro 55 Roman
-// font-weight: 500;
-
-// Neue Haas Grotesk Display Pro 65 Medium
-// font-weight: 600;
-
-// Neue Haas Grotesk Display Pro 75 Bold
-// font-weight: 700;
-
-// Neue Haas Grotesk Display Pro 95 Black
-// font-weight: 900;
-
-
-//  Franklin Gothic ATF Thin
-// font-family: franklin-gothic-atf, sans-serif;
-// font-weight: 100;
-
-// Franklin Gothic ATF Extra Light
-// font-weight: 200;
-
-// Franklin Gothic ATF Light
-// font-weight: 300;
-
-// Franklin Gothic ATF Regular
-// font-weight: 400;
-
-// Franklin Gothic ATF Medium
-// font-weight: 500;
 
 
