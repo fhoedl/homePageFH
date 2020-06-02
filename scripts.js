@@ -7,7 +7,6 @@ appFH.navBar = () => {
         // $('.navToggle').prop('checked', false);
     })
 }
-
 appFH.link = () => {
     $(`.menuSub`).on(`click`,`li`,function (e) {
 		$(`.navToggle`)
@@ -51,7 +50,7 @@ appFH.typing = () => {
 // const Typewriter = function (txtElement, words, wait = 3000) { ... }
 // ....INSTEAD using ES6 Class
 class Typewriter {
-    constructor(txtElement, words, wait = 3000) {
+    constructor(txtElement, words, wait = 1500) {
         this.txtElement = txtElement;
         this.words = words;
         this.txt = '';
@@ -75,7 +74,7 @@ class Typewriter {
 
         // INSERT TEXT INTO ELEMENT
         this.txtElement.html(`<span class="txt">${this.txt}</span>`);
-        let typeSpeed = "325"; // SET Typing Speed
+        let typeSpeed = "255"; // SET Typing Speed
 
         if (this.isDeleting) {
             typeSpeed = typeSpeed / 3; // SET Deleting Speed

@@ -31,8 +31,6 @@
     }
         .projectContainer h3{
         text-align: center;
-        padding-top: calc(2vh + 20px);
-        line-height: 1.6;
     }
 
     .projectContainer{
@@ -140,7 +138,8 @@
         transform: all;
     }
     ul.menuSub {
-        opacity: 0;
+        // opacity: 0;
+        visibility: hidden;
         position: absolute;
         z-index: 1;
         top: 0;
@@ -170,7 +169,8 @@
         padding-left: 0;
     }
     .navToggle div{
-        opacity: 0;
+        // opacity: 0;
+        visibility: hidden;
     }
 
     .projectContainer{
@@ -190,8 +190,9 @@
             }
             .titleElements {
                 grid-column: 1 /-1;
-                grid-row: 1/4;
-                align-self: center;
+                grid-row: 1/5;
+                padding-top: 10vh;
+                align-self:center;
             }
     }
     .projectContainer{
@@ -227,13 +228,9 @@
         width: 85%;
     }
 
-
     .skills ul{
         max-width: 400px;
         margin: 0 auto;
         margin-bottom: 3vh;
     }
-
-
-
 }

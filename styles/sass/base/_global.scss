@@ -45,6 +45,7 @@ h1 {
   text-transform: uppercase;
   color:white;
   text-shadow: 1px 2px 10px hsl(183, 34%, 86%);
+  margin-top: 0;
     span{
       font-weight: 100;
       letter-spacing: .5rem;
@@ -105,7 +106,15 @@ a, li{
     margin: 2vh 0 4vh 0;
 }
 
-// BUTTONS
+// BUTTONS & Links
+button{
+  display: inline-block;
+  list-style: unset;
+  border:none;
+  height: fit-content;
+  width: fit-content;
+  background-color: inherit;
+}
 div.formSubmit,
 .card a {
   // border: 1px solid rgb(0, 30, 255);
@@ -120,6 +129,18 @@ div.formSubmit,
   display:block;
   text-align: center;
 }
+button a{
+  display: inline-block;
+  font-family: $primaryFont;
+  font-weight: 500;
+  padding:calc(.7rem + .2vw) calc(1rem + .3vw);
+  border-radius: .4rem;
+  border: 1px solid #2f95d08c;
+  color: $coolAccentColor;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 3.5vh
+}
 div .formSubmit{
     margin-top: calc( 1vh + 20px);
     margin-bottom: calc( 2vh + 25px);
@@ -130,10 +151,12 @@ div .formSubmit{
             height: 45px;
         }
 }
+.titleElements button a:hover,
 div .formSubmit:hover,
 div .formSubmit input:hover,
 .card a:hover{
    background-color: $coolAccentColor;
+   color: #fff;
 }
 // end buttons -----------------------
 

@@ -4,19 +4,9 @@ footer {
         h2{
             color: #2aa7f0;
             font-weight: 100;
+            font-size: calc(2.8rem + .8vw);
         }
 }
-
-footer h2{
-    color: #2aa7f0;
-    font-weight: 100;
-    font-size: calc(2.8rem + .8vw);
-}
-
-// .footBkgd{
-//     background: linear-gradient(180deg,  hsl(170, 55%, 97%) 35%,  hsl(171, 62%, 94%) 100%);
-// }
-
 
 .formContainer{
     padding: calc(3vh + 30px) 0 0 0;
@@ -24,11 +14,10 @@ footer h2{
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-}
-
-form{
-    display: grid;
-    width: 100%;
+        form{
+            display: grid;
+            width: 100%;
+        }
 }
 
 .form{
@@ -141,7 +130,7 @@ textarea{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 80%;
+    width: 80%;
     justify-content: space-between;
     align-items: center;
 }

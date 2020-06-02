@@ -2,7 +2,9 @@
 
 // Cursor, following typing, graphic element
 .txt-type > .txt {
-  border-right: .2rem solid #999; 
+  // border-right: 2rem solid #f3a426bf;
+  border-right: 2.3rem solid #739bb5bf;  
+  border-right: .6rem solid #f3a426bf;
   padding: .05rem .5rem .05rem 0;
 }
 // end -----------------------------
@@ -15,34 +17,34 @@
  * See http://animista.net/license for more info. 
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
-.scale-out-center {
-	-webkit-animation: scale-out-center 1.25s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s reverse both;
-	        animation: scale-out-center 1.25s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s reverse both;
-}
+// .scale-out-center {
+// 	-webkit-animation: scale-out-center 1.25s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s reverse both;
+// 	        animation: scale-out-center 1.25s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s reverse both;
+// }
 
-@-webkit-keyframes scale-out-center {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    opacity: 1;
-  }
-}
-@keyframes scale-out-center {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    opacity: 1;
-  }
-}
+// @-webkit-keyframes scale-out-center {
+//   0% {
+//     -webkit-transform: scale(1);
+//             transform: scale(1);
+//     opacity: 1;
+//   }
+//   100% {
+//     -webkit-transform: scale(0);
+//             transform: scale(0);
+//     opacity: 1;
+//   }
+// }
+// @keyframes scale-out-center {
+//   0% {
+//     -webkit-transform: scale(1);
+//             transform: scale(1);
+//     opacity: 1;
+//   }
+//   100% {
+//     -webkit-transform: scale(0);
+//             transform: scale(0);
+//     opacity: 1;
+//   }
+// }
 
 
