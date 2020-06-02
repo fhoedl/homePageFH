@@ -100,14 +100,20 @@
                 }
         }
     }
+    
     div.cardInfo.info1 h4 {
         margin-top: 0vh;
     }
 
-    .card2 .cardInfo ul {
-	text-align: center;
+    .card2 .cardInfo ul,
+    .cardInfo,
+    .card2 .cardInfo{
+            p{
+                text-align: center;
+            }
     }
     
+
     .bioContainer {
         justify-items: center;
         max-width: 65ch;
@@ -173,9 +179,9 @@
         visibility: hidden;
     }
 
-    .projectContainer{
-        width:80%;
-    }
+    // .projectContainer{
+    //     width:80%;
+    // }
     
     .homeContainer {
         display:grid;
@@ -200,6 +206,7 @@
         margin: 0 auto;
         width: 100%;
     }
+
     .projSmlWrap{
         width: 100%;
     }

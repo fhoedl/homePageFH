@@ -8,11 +8,9 @@
 .homeContainer {
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    // grid-template-rows: repeat(4, 1fr);
         nav{
             grid-column: 1 / -1; 
             grid-row: 1/1;
-            // padding-bottom: 10vh;
         }
         .titleElements {
             grid-column: 1 /-1;
@@ -20,64 +18,17 @@
             align-self: center;
             justify-content: start;
             margin: 5vh 2.5%;
-            // width: 100%;
-            // padding: 10vh 0 5vh 0;
         }
 }
 
-//About Layout
-.aboutContainer{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
+// ANIMATIONS
+// Cursor, following typing, graphic element
+.txt-type > .txt {
+  border-right: 2.3rem solid #739bb5bf;  
+  border-right: .6rem solid #f3a426bf;
+  padding: .05rem .5rem .05rem 0;
 }
-
-.bioContainer {
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    width: 100%;
-    justify-content: center;
-    min-height: fit-content;
-        h3{
-            max-width: 100vw;
-            padding: 0 2.5%;
-            display: block;
-            grid-column: 1/-1;
-            padding-bottom: 3vh;
-        }
-        div{
-            justify-self: center;
-            max-width: 90vw;
-            align-self: start;
-            padding: 0 5%;
-            margin: 0 0 2vh 0;
-        }
-        p{
-            text-align: left;
-            margin: 0 auto;
-            max-width: 65ch;
-            margin: 2vh 0;
-        }
-        .aboutImg{
-            width: 100%;
-            min-width: 280px;
-            height: 100%;
-            max-width: 90vw;
-            padding-bottom: 3vh;
-            //  img{
-            //     box-shadow: -10px -5px 15px rgb(202, 240, 255),5px 5px 10px rgba(109, 145, 206, 0.35), 3px 3px 5px rgba(84, 97, 118, 0.55);
-            //  }
-        }
-}
-
-.aboutImg>img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 50% 80%;
-    filter: brightness(1.2);
-}
-
+// end -----------------------------
 
 
 // Project Layout
@@ -114,6 +65,7 @@
     width:100%;
     object-fit: cover;
 }
+
 .cardImg1 img:nth-child(2),
 .cardImg2 img:nth-child(2),
 .cardImg3 img:nth-child(2){
@@ -176,6 +128,57 @@
 .card>div:nth-child(2) {
     justify-self: left;
 }
+
+//About Layout
+.aboutContainer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bioContainer {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    width: 100%;
+    justify-content: center;
+    min-height: fit-content;
+        h3{
+            max-width: 100vw;
+            padding: 0 2.5%;
+            display: block;
+            grid-column: 1/-1;
+            padding-bottom: 3vh;
+        }
+        div{
+            justify-self: center;
+            max-width: 90vw;
+            align-self: start;
+            padding: 0 5%;
+            margin: 0 0 2vh 0;
+        }
+        p{
+            text-align: left;
+            margin: 0 auto;
+            max-width: 65ch;
+            margin: 2vh 0;
+        }
+        .aboutImg{
+            width: 100%;
+            min-width: 280px;
+            height: 100%;
+            max-width: 90vw;
+            padding-bottom: 3vh;
+        }
+}
+
+.aboutImg>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 80%;
+    filter: brightness(1.2);
+}
+
 
 symbol g path,
 symbol path,

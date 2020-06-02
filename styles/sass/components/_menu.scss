@@ -37,19 +37,15 @@ nav{
       }
 }
 
-
 .navToggle:focus .hamburger,
 .navToggle:hover .hamburger{
-    // opacity: 1;
     visibility: visible;
-    transition: all .4s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 .navToggle:checked ~.menuSub {
-    // opacity: 1;
     visibility: visible;
-    transition: all .4s ease-in-out;
+    transition: all .2s ease-in-out;
 }
-
 
 // HAMBURGER... built as elements for Animation
 .hamburger{
@@ -79,18 +75,23 @@ nav{
         }
   }
 
-// ANIMATIONS
-// ROTATING Hamburger, create X
+// .navToggle:hover .hamburger::after,
+// .navToggle:hover .hamburger::before
+//     {
+//     background-color: $coolAccentColor;
+// }
+
+// ANIMATIONS, ROTATING Hamburger, create X
 .animatedNav .hamburger::after{
     transform: rotate(90deg) translate(-10px); 
-    transition: all .4s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 .animatedNav .hamburger{
     transform: rotate(-45deg); 
-    transition: all .2s ease-in-out;
+    transition: all .1s ease-in-out;
 }
 .animatedNav .hamburger::before{
-    // opacity: 0;  //hide "third" extra element of hamburger
+    //hide "third" extra element of hamburger
     visibility: hidden;
 }
 // end -----------------------------

@@ -98,17 +98,12 @@ class Typewriter {
 // init FUNCTION Calls
 appFH.init = () => {
     appFH.navBar();
-    appFH.typing();
     appFH.scroll();
     appFH.link();
+    appFH.typing();
 }
 
 // DOCUMENT READY... with init FUNCTION CALL
 $(() => {
     appFH.init();
 })
-
-// Option2 -  jQuery Smooth scroll
-// $('a').on('click', function(e) {
-//     console.log(this.hash);
-// })
