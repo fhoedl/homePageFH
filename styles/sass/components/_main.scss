@@ -169,6 +169,19 @@
             max-width: 90vw;
             padding-bottom: 3vh;
         }
+        .aboutLinks {
+            // border: 1px solid red;
+            display: flex;
+            padding: 0;
+            justify-content: center;
+            align-self: center;
+            button{
+                padding: 8px;
+                a{
+                    margin: 0;
+                }
+            }
+        }
 }
 
 .aboutImg>img{

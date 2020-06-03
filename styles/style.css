@@ -416,7 +416,7 @@ div .formSubmit input {
   height: 45px;
 }
 
-.titleElements button a:hover,
+button a:hover,
 div .formSubmit:hover,
 div .formSubmit input:hover,
 .card a:hover {
@@ -637,6 +637,26 @@ div .formSubmit input:hover,
   height: 100%;
   max-width: 90vw;
   padding-bottom: 3vh;
+}
+
+.bioContainer .aboutLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.bioContainer .aboutLinks button {
+  padding: 8px;
+}
+
+.bioContainer .aboutLinks button a {
+  margin: 0;
 }
 
 .aboutImg > img {
